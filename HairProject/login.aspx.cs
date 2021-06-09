@@ -7,16 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace HairProject
 {
-    public partial class index : Page
+    public partial class login : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
-        }
-
-        protected void btnlogin_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("login");
+           
         }
     }
 }

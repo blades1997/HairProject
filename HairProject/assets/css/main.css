@@ -18,12 +18,14 @@ tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
 footer, header, hgroup, menu, nav, output, ruby,
 section, summary, time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;}
+	border-style: none;
+    border-color: inherit;
+    border-width: 0;
+    margin: 25px 0 0 0;
+    padding: 0;
+    font-size: 100%;
+	vertical-align: baseline;
+}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -670,16 +672,16 @@ input, select, textarea {
 		color: #ffffff;
 		cursor: pointer;
 		display: inline-block;
-		height: 1.4em;
+		height: 2.6em;
 		line-height: 3.5em;
 		outline: 0;
 		padding: 0 2em 0 2em;
 		position: relative;
 		text-align: center;
 		text-decoration: none;
-    top: 8px;
-    left: 4px;
-    width: 82px;
+    top: 14px;
+    left: 12px;
+    width: 175px;
 }
 
 		input[type="button"].down,
@@ -1834,11 +1836,10 @@ input, select, textarea {
 	#header {
 		position: fixed;
 		z-index: 10000;
-		left: 0;
-		top: 0;
+		left: 2px;
+		top: 18px;
 		width: 100%;
-		background: rgba(255, 255, 255, 0.95);
-		height: 3em;
+		height: 3.8em;
 		line-height: 3em;
 		box-shadow: 0 0 0.15em 0 rgba(0, 0, 0, 0.1);
 	}
@@ -1846,11 +1847,12 @@ input, select, textarea {
 		#header h1 {
 			position: absolute;
 			left: 1em;
-			top: 0;
+			top: -26px;
 			height: 3em;
 			line-height: 3em;
 			cursor: default;
-		}
+    width: 229px;
+}
 
 			#header h1 a {
 				font-size: 1.25em;
@@ -1858,11 +1860,12 @@ input, select, textarea {
 
 		#header nav {
 			position: absolute;
-			right: 0.5em;
-			top: 0;
-			height: 3em;
+			right: -2em;
+			top: -43px;
+			height: 3.8em;
 			line-height: 3em;
-		}
+    width: 995px;
+}
 
 			#header nav ul {
 				margin: 0;
@@ -1872,7 +1875,8 @@ input, select, textarea {
 					display: inline-block;
 					margin-left: 0.5em;
 					font-size: 0.9em;
-				}
+    width: 116px;
+}
 
 					#header nav ul li a {
 						display: block;
@@ -1882,7 +1886,8 @@ input, select, textarea {
 						line-height: 3em;
 						padding: 0 0.5em 0 0.5em;
 						outline: 0;
-					}
+    width: 115px;
+}
 
 		@media screen and (max-width: 736px) {
 
@@ -2249,12 +2254,12 @@ input, select, textarea {
 /* Intro */
 
 	#intro {
-		background: url("images/overlay.png"), url("../../images/intro.jpg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
-		background-position: top left, bottom center;
 		background-repeat: repeat, no-repeat;
-	}
+    top: 25px;
+    left: -4px;
+}
 
 /* One */
 

@@ -27,11 +27,10 @@
 						<li><a href="#two">設計師</a></li>
 						<li><a href="#work">相關產品</a></li>
 						<li><a href="#contact">我要預約</a></li>
-					    <li>
-                            <asp:Button ID="btnlogin" runat="server" OnClick="btnlogin_Click" Text="登入" />
-                        </li>
+					    <asp:Button ID="btnlogin" runat="server" OnClick="btnlogin_Click" Text="登入" />
 					</ul>
 				</nav>
+			    <br />
 			</header>
 
 		<!-- Intro -->
@@ -115,6 +114,7 @@
 							</div>
 							<ul class="actions special">
 								<li><input type="submit" value="我要預約" /></li>
+                                   
 							</ul>
 					</div>
 				</div>
