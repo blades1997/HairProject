@@ -106,6 +106,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="add_customer.aspx" />
     <Content Include="assets\css\fontawesome-all.min.css" />
     <Content Include="assets\css\images\arrow.svg" />
     <Content Include="assets\css\images\dark-arrow.svg" />
@@ -238,6 +239,13 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="add_customer.aspx.cs">
+      <DependentUpon>add_customer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="add_customer.aspx.designer.cs">
+      <DependentUpon>add_customer.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
