@@ -7,7 +7,7 @@
 -->
 <html>
 	<head>
-		<title>Big Picture by HTML5 UP</title>
+		<title>米蘭時尚設計髮型</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
