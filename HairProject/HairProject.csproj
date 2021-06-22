@@ -188,6 +188,7 @@
     <Content Include="style.css" />
     <Content Include="style1.css" />
     <Content Include="Works.aspx" />
+    <None Include="Properties\PublishProfiles\HairProject - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="images\fulls\01.jpg" />
     <Content Include="images\fulls\02.jpg" />
