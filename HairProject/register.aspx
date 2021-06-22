@@ -2,15 +2,38 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>註冊---米蘭時尚髮型設計</title>
+  <link rel="stylesheet" href="./style1.css">
+
 </head>
 <body>
-    <form id="form1" runat="server">
-        <div>
-        </div>
-    </form>
+<!-- partial:index.partial.html -->
+<form action="#" method="post" runat="server">
+  <h2>註冊帳號</h2>	
+		<p>
+			<label for="account" class="floatLabel">帳號</label>
+            <asp:TextBox ID="txtaccount" runat="server"></asp:TextBox>
+            <asp:Label ID="lblaccount" runat="server"></asp:Label>
+		</p>
+		<p>
+			<label for="password" class="floatLabel">密碼</label>
+            <asp:TextBox ID="password" runat="server"></asp:TextBox>	
+            <asp:Label ID="lblpassword" runat="server"></asp:Label>
+		</p>
+		<p>
+			<label for="confirm_password" class="floatLabel">確認密碼</label>
+            <asp:TextBox ID="confirm_password" runat="server"></asp:TextBox>
+            <asp:Label ID="lblconfirm_password" runat="server"></asp:Label>
+		</p>
+		<p>
+			<asp:Button ID="submit" runat="server" Text="建立帳號" />
+		</p>
+	</form>
+<!-- partial -->
+  <script  src="./script1.js"></script>
+
 </body>
 </html>
