@@ -184,7 +184,9 @@
     <Content Include="Lest.aspx" />
     <Content Include="register.aspx" />
     <Content Include="script.js" />
+    <Content Include="script1.js" />
     <Content Include="style.css" />
+    <Content Include="style1.css" />
     <Content Include="Works.aspx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="images\fulls\01.jpg" />
