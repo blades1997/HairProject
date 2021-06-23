@@ -15,17 +15,15 @@
             <asp:Label ID="Label1" runat="server" Text="顧客名單管理"></asp:Label>
             <br />
             <br />
+            <br />
+            <asp:TextBox ID="TextBox1" runat="server" Height="136px" Width="676px"></asp:TextBox>
+&nbsp;&nbsp;&nbsp;
+            <asp:Button ID="Button1" runat="server" Text="新增顧客" />
         </div>
         <p>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
         </p>
-        <div style="margin-left: 40px">
-            <asp:TextBox ID="TextCusList" runat="server" Height="180px" Width="732px" OnTextChanged="TextCusList_TextChanged"></asp:TextBox>
-            <br />
-            <br />
-        </div>
-        <div style="margin-left: 40px">
-            <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="新增" />
+        
         </div>
     </form>
 </body>

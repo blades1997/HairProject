@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Performance.aspx.cs" Inherits="WebApplication2.WebForm2" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Performance.aspx.cs" Inherits="HairProject.Performance" %>
 
 <!DOCTYPE html>
 
@@ -13,11 +13,7 @@
             <asp:Label ID="Label1" runat="server" Text="業績管理"></asp:Label>
             <br />
         </div>
-        </br>&nbsp;<asp:Table ID="Table2" runat="server">
-        </asp:Table>
-        <asp:Table ID="Table1" runat="server" Height="388px" Width="926px" CellPadding="9" CellSpacing="31">
-            
-        </asp:Table>
+        </br>&nbsp;<asp:TextBox ID="TextBox1" runat="server" Height="260px" Width="893px"></asp:TextBox>
     </form>
 </body>
 </html>
