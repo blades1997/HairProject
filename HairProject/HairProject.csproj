@@ -107,6 +107,7 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="AddDisenger.aspx" />
+    <Content Include="AddPermance.aspx" />
     <Content Include="add_customer.aspx" />
     <Content Include="assets\css\fontawesome-all.min.css" />
     <Content Include="assets\css\images\arrow.svg" />
@@ -252,6 +253,13 @@
     </Compile>
     <Compile Include="AddDisenger.aspx.designer.cs">
       <DependentUpon>AddDisenger.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddPermance.aspx.cs">
+      <DependentUpon>AddPermance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddPermance.aspx.designer.cs">
+      <DependentUpon>AddPermance.aspx</DependentUpon>
     </Compile>
     <Compile Include="add_customer.aspx.cs">
       <DependentUpon>add_customer.aspx</DependentUpon>

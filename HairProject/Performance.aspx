@@ -16,7 +16,7 @@
         </br>&nbsp;<asp:TextBox ID="TextBox1" runat="server" Height="260px" Width="893px"></asp:TextBox>
         <br />
         <br />
-        <asp:Button ID="Button1" runat="server" Text="新增本日業績" />
+        <asp:Button ID="Button1" runat="server" Text="新增本日業績" OnClick="Button1_Click" />
         <br />
         <asp:Button ID="Button2" runat="server" Text="修   改   業   績" />
     </form>
