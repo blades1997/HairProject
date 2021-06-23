@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace HairProject
 {
-    public partial class Works : System.Web.UI.Page
+    public partial class AddDisenger : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

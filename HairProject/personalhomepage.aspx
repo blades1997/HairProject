@@ -1,4 +1,5 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm4.aspx.cs" Inherits="WebApplication2.WebForm4" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="personalhomepage.aspx.cs" Inherits="HairProject.personalhomepage" %>
+
 
 <!DOCTYPE html>
 
@@ -67,6 +68,15 @@
         <asp:Button ID="Button3" runat="server" Text="作品管理" />
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:Button ID="Button4" runat="server" Text="顧客名單" />
+                <br />
+        <br />
+        <br />
+&nbsp;&nbsp;&nbsp;
+        <asp:Button ID="Button5" runat="server" OnClick="Button5_Click" Text="修改個人頁面" />
+
+    </form>
+</body>
+</html>
 
     </form>
 </body>
