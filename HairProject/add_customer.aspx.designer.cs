@@ -33,13 +33,13 @@ namespace HairProject
         protected global::System.Web.UI.WebControls.Label Label1;
 
         /// <summary>
-        /// TextBox1 控制項。
+        /// TextName 控制項。
         /// </summary>
         /// <remarks>
         /// 自動產生的欄位。
         /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox TextName;
 
         /// <summary>
         /// Label2 控制項。
@@ -51,13 +51,13 @@ namespace HairProject
         protected global::System.Web.UI.WebControls.Label Label2;
 
         /// <summary>
-        /// TextBox2 控制項。
+        /// TextTel 控制項。
         /// </summary>
         /// <remarks>
         /// 自動產生的欄位。
         /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox2;
+        protected global::System.Web.UI.WebControls.TextBox TextTel;
 
         /// <summary>
         /// Label3 控制項。
@@ -69,13 +69,13 @@ namespace HairProject
         protected global::System.Web.UI.WebControls.Label Label3;
 
         /// <summary>
-        /// ListBox1 控制項。
+        /// ListTypes 控制項。
         /// </summary>
         /// <remarks>
         /// 自動產生的欄位。
         /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListBox ListBox1;
+        protected global::System.Web.UI.WebControls.ListBox ListTypes;
 
         /// <summary>
         /// Label4 控制項。
@@ -87,31 +87,31 @@ namespace HairProject
         protected global::System.Web.UI.WebControls.Label Label4;
 
         /// <summary>
-        /// ListBox2 控制項。
+        /// ListJob 控制項。
         /// </summary>
         /// <remarks>
         /// 自動產生的欄位。
         /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListBox ListBox2;
+        protected global::System.Web.UI.WebControls.ListBox ListJob;
 
         /// <summary>
-        /// 男 控制項。
+        /// rdbM 控制項。
         /// </summary>
         /// <remarks>
         /// 自動產生的欄位。
         /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton 男;
+        protected global::System.Web.UI.WebControls.RadioButton rdbM;
 
         /// <summary>
-        /// 女 控制項。
+        /// rdbF 控制項。
         /// </summary>
         /// <remarks>
         /// 自動產生的欄位。
         /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton 女;
+        protected global::System.Web.UI.WebControls.RadioButton rdbF;
 
         /// <summary>
         /// TextBox3 控制項。
@@ -121,5 +121,14 @@ namespace HairProject
         /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBox3;
+
+        /// <summary>
+        /// BtnAdd 控制項。
+        /// </summary>
+        /// <remarks>
+        /// 自動產生的欄位。
+        /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BtnAdd;
     }
 }

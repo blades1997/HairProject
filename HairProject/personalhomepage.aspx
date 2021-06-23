@@ -61,17 +61,17 @@
         <br />
         <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:Button ID="Button1" runat="server" Text="預約管理" OnClick="Button1_Click" />
+        <asp:Button ID="BtnRes" runat="server" Text="預約管理" OnClick="Button1_Click" />
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:Button ID="Button2" runat="server" Text="業績管理" OnClick="Button2_Click" />
+        <asp:Button ID="BtnPer" runat="server" Text="業績管理" OnClick="Button2_Click" />
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:Button ID="Button3" runat="server" Text="作品管理" OnClick="Button3_Click" />
+        <asp:Button ID="BtnWok" runat="server" Text="作品管理" OnClick="Button3_Click" />
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:Button ID="Button4" runat="server" Text="顧客名單" OnClick="Button4_Click" />
+        <asp:Button ID="BtnLst" runat="server" Text="顧客名單" OnClick="Button4_Click" />
                 <br />
         <br />
         <br />
-        <asp:Button ID="Button5" runat="server" OnClick="Button5_Click" Text="新增/修改 個人主頁" />
+        <asp:Button ID="BtnAdd" runat="server" OnClick="Button5_Click" Text="新增/修改 個人主頁" />
         <br />
 
 
