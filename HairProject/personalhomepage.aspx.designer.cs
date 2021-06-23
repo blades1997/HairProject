@@ -7,11 +7,11 @@
 // </自動產生的>
 //------------------------------------------------------------------------------
 
-namespace WebApplication2
+namespace HairProject
 {
 
 
-    public partial class WebForm4
+    public partial class personalhomepage
     {
 
         /// <summary>
