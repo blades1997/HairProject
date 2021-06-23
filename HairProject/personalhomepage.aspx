@@ -71,6 +71,8 @@
                 <br />
         <br />
         <br />
+        <asp:Button ID="Button5" runat="server" OnClick="Button5_Click" Text="新增/修改 個人主頁" />
+        <br />
 
 
     </form>

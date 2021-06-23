@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
+    <title>新增/修改個人首頁</title>
 </head>
 <body>
     <td class="left"> 上傳頭貼<span style="color: red; font-weight: bolder">*</span>：</td>
@@ -40,5 +40,6 @@
         <p>
             &nbsp;</p>
         <asp:Button ID="Button1" runat="server" Text="送出" />
+         </form>
 </body>
 </html>

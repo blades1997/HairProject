@@ -33,5 +33,10 @@ namespace HairProject
         {
             Response.Redirect("Lest");
         }
+
+        protected void Button5_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("AddDisenger");
+        }
     }
 }
