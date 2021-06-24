@@ -18,7 +18,7 @@
             <br />
             <asp:TextBox ID="TextBox1" runat="server" Height="136px" Width="676px"></asp:TextBox>
 &nbsp;&nbsp;&nbsp;
-            <asp:Button ID="Button1" runat="server" Text="新增顧客" />
+            <asp:Button ID="Button1" runat="server" Text="新增顧客" OnClick="Button1_Click" />
         </div>
         <p>
 

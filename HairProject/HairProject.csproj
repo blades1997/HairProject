@@ -191,6 +191,7 @@
     <Content Include="style.css" />
     <Content Include="style1.css" />
     <Content Include="Upload.aspx" />
+    <Content Include="User_Reservation.aspx" />
     <Content Include="Workpublished.aspx" />
     <None Include="Properties\PublishProfiles\HairProject - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
@@ -357,6 +358,13 @@
     </Compile>
     <Compile Include="Upload.aspx.designer.cs">
       <DependentUpon>Upload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Reservation.aspx.cs">
+      <DependentUpon>User_Reservation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Reservation.aspx.designer.cs">
+      <DependentUpon>User_Reservation.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
