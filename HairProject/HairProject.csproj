@@ -185,6 +185,7 @@
     <Content Include="assets\webfonts\fa-solid-900.woff2" />
     <Content Include="Lest.aspx" />
     <Content Include="register.aspx" />
+    <Content Include="Reservation.aspx" />
     <Content Include="script.js" />
     <Content Include="script1.js" />
     <Content Include="style.css" />
@@ -211,7 +212,6 @@
     <Content Include="login.aspx" />
     <Content Include="Performance.aspx" />
     <Content Include="personalhomepage.aspx" />
-    <Content Include="Reservation.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />

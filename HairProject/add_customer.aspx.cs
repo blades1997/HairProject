@@ -19,20 +19,20 @@ namespace HairProject
     }
     
     
-    public partial class add_customer:Customer
-    {
-       
-    }
     public partial class add_customer : System.Web.UI.Page
     {
+        List<Customer> cus = new List<Customer>();
         protected void Page_Load(object sender, EventArgs e)
         {
+            DropDownTypes.Text = "燙髮";
+            DropDownJob.Text = "金融";
+            rdbM.Checked = true;
             
         }
 
         protected void BtnAdd_Click(object sender, EventArgs e)
         {
-            List<Customer> cus = new List<Customer>();
+            
             string sex = "";
             if (rdbM.Checked)
             {
@@ -46,12 +46,17 @@ namespace HairProject
             {
                 CusName = TextName.Text,
                 CusTel = TextTel.Text,
-                CusTypes = ListTypes.Text,
-                CusJob = ListJob.Text,
+                CusTypes = DropDownTypes.Text,
+                CusJob = DropDownJob.Text,
                 CusSex = sex
             });
+            
             TextName.Text = "";
             TextTel.Text = "";
+             
+
         }
+
+       
     }
 }

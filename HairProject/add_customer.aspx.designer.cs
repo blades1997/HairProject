@@ -69,13 +69,13 @@ namespace HairProject
         protected global::System.Web.UI.WebControls.Label Label3;
 
         /// <summary>
-        /// ListTypes 控制項。
+        /// DropDownTypes 控制項。
         /// </summary>
         /// <remarks>
         /// 自動產生的欄位。
         /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListBox ListTypes;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownTypes;
 
         /// <summary>
         /// Label4 控制項。
@@ -87,13 +87,13 @@ namespace HairProject
         protected global::System.Web.UI.WebControls.Label Label4;
 
         /// <summary>
-        /// ListJob 控制項。
+        /// DropDownJob 控制項。
         /// </summary>
         /// <remarks>
         /// 自動產生的欄位。
         /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListBox ListJob;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownJob;
 
         /// <summary>
         /// rdbM 控制項。
@@ -114,15 +114,6 @@ namespace HairProject
         protected global::System.Web.UI.WebControls.RadioButton rdbF;
 
         /// <summary>
-        /// TextBox3 控制項。
-        /// </summary>
-        /// <remarks>
-        /// 自動產生的欄位。
-        /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox3;
-
-        /// <summary>
         /// BtnAdd 控制項。
         /// </summary>
         /// <remarks>
@@ -130,5 +121,14 @@ namespace HairProject
         /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button BtnAdd;
+
+        /// <summary>
+        /// TxtShow 控制項。
+        /// </summary>
+        /// <remarks>
+        /// 自動產生的欄位。
+        /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Table TxtShow;
     }
 }
