@@ -32,7 +32,7 @@
             &nbsp;</p>
         <p style="margin-left: 40px">
            
-            <asp:Button ID="Button" runat="server" Text="作品上傳" />
+            <asp:Button ID="Button" runat="server" Text="作品上傳" OnClick="Button_Click" />
            
         </p>
         <div>
