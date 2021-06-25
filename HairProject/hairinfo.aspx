@@ -20,6 +20,8 @@
 &nbsp;<asp:Image ID="Image6" runat="server" Height="200px" Width="200px" />
 &nbsp;<asp:Image ID="Image7" runat="server" Height="200px" Width="200px" />
 &nbsp;<asp:Image ID="Image8" runat="server" Height="200px" Width="200px" />
+   &nbsp;<asp:Image ID="Image11" runat="server" Height="200px" Width="200px" />
+      &nbsp;<asp:Image ID="Image12" runat="server" Height="200px" Width="200px" />
         </div>
     </form>
 </body>

@@ -6,17 +6,21 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
+    <style type="text/css">
+        .auto-style1 {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
-            <asp:Image ID="Image1" runat="server" Height="150px" Width="150px" />
+        <div class="auto-style1">
+            <asp:Image ID="Image1" runat="server" Height="150px" Width="150px" style="text-align: center" />
 &nbsp;<asp:Image ID="Image2" runat="server" Height="150px" Width="150px" />
 &nbsp;<asp:Image ID="Image3" runat="server" Height="150px" Width="150px" />
 &nbsp;<asp:Image ID="Image4" runat="server" Height="150px" Width="150px" />
 &nbsp;<asp:Image ID="Image5" runat="server" Height="150px" Width="150px" />
 &nbsp;<asp:Image ID="Image6" runat="server" Height="150px" Width="150px" />
-            <br />
             <br />
             <br />
             <br />
