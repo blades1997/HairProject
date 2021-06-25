@@ -11,7 +11,10 @@ namespace HairProject
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-           
+            if (Session["logined"] != null && Session["logined"].ToString() == "1")
+            {
+                Response.Redirect("index");
+            }
         }
 
         protected void BtnReg_Click(object sender, EventArgs e)
@@ -24,6 +27,11 @@ namespace HairProject
             {
 
             }
+        }
+
+        protected void BtnForget_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

@@ -49,6 +49,7 @@
 						<h2>流行髮型</h2>
 					</header>
 					<p>不知道甚麼髮型適合自己嗎? 這裡有各式各樣來自各地的髮型可以讓您參考!</p>
+                    <asp:Button ID="btnhair" runat="server" Text="更多資訊" OnClick="btnhair_Click" />
 				</div>
 				<a href="#two" class="button style2 down anchored">Next</a>
 			</section>
@@ -60,6 +61,7 @@
 						<h2>設計師</h2>
 					</header>
 					<p>本店設計師們都有各自的特色和專長,這裡能讓客戶們找到適合自己的專屬設計師!</p>
+                    <asp:Button ID="btndesigner" runat="server" Text="更多資訊" OnClick="btndesigner_Click" />
 				</div>
 				<a href="#work" class="button style2 down anchored">Next</a>
 			</section>
@@ -70,6 +72,7 @@
 					<header>
 						<h2>相關產品</h2>
 						<p>您有關於護髮,護理頭皮的困擾嗎?這裡有各式各樣的產品來幫助您護理自己的髮質和頭皮!</p>
+                        <asp:Button ID="btnproduct" runat="server" Text="更多資訊" OnClick="btnproduct_Click" />
 					</header>
 
 					<!-- Gallery  -->

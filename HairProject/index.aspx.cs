@@ -18,5 +18,20 @@ namespace HairProject
         {
             Response.Redirect("login");
         }
+
+        protected void btnhair_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        protected void btndesigner_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void btnproduct_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

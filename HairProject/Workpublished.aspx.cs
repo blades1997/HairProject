@@ -7,11 +7,16 @@ using System.Web.UI.WebControls;
 
 namespace HairProject
 {
-    public partial class Works : System.Web.UI.Page
+    public partial class Workpublished : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
+        }
+
+        protected void Button_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Upload");
         }
     }
 }

@@ -672,16 +672,16 @@ input, select, textarea {
 		color: #ffffff;
 		cursor: pointer;
 		display: inline-block;
-		height: 2.6em;
+		height: 2em;
 		line-height: 3.5em;
 		outline: 0;
 		padding: 0 2em 0 2em;
 		position: relative;
 		text-align: center;
 		text-decoration: none;
-    top: 14px;
+    top: 28px;
     left: 12px;
-    width: 175px;
+    width: 239px;
 }
 
 		input[type="button"].down,
