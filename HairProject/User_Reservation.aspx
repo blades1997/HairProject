@@ -8,7 +8,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <title>我要預約</title>
 </head>
-<body>
+<body background="https://images.pexels.com/photos/3297593/pexels-photo-3297593.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
 	<form id="form1" runat="server" method="post" >
 		<h1>預約登記</h1>	
         <br />
