@@ -23,12 +23,14 @@
     <h3>Password:</h3>
       <asp:TextBox ID="Txtpassword" runat="server"></asp:TextBox>
     <br>
-      <asp:Button ID="BtnLogin" runat="server" Height="30px" OnClick="BtnLogin_Click1" Text="登入" Width="104px" />
+      <asp:Label ID="Label1" runat="server" Font-Italic="True" Font-Underline="False" Height="30px" Width="300px"></asp:Label>
+      <br>
+      <asp:Button ID="BtnLogin" runat="server" Height="30px" OnClick="BtnLogin_Click" Text="登入" Width="104px" />
 &nbsp;<asp:Button ID="BtnReg" runat="server" Height="30px" OnClick="BtnReg_Click" Text="註冊" Width="104px" />
       <asp:Button ID="BtnForget" runat="server" Text="忘記密碼?" Width="73px" OnClick="BtnForget_Click" />
     <br>
     &nbsp;<br>
-    <h6 class="no-access">&nbsp;</h6>
+    
   </div>
 </div>
 <div class="error-page">
