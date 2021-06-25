@@ -21,17 +21,17 @@ namespace HairProject
 
         protected void btnhair_Click(object sender, EventArgs e)
         {
-           
+            Response.Redirect("hairinfo");
         }
 
         protected void btndesigner_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("designerlist");
         }
 
         protected void btnproduct_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("productinfo");
         }
     }
 }
