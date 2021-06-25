@@ -7,11 +7,11 @@
 // </自動產生的>
 //------------------------------------------------------------------------------
 
-namespace WebApplication2
+namespace HairProject
 {
 
 
-    public partial class WebForm6
+    public partial class Lest
     {
 
         /// <summary>
@@ -33,12 +33,21 @@ namespace WebApplication2
         protected global::System.Web.UI.WebControls.Label Label1;
 
         /// <summary>
-        /// ListBox1 控制項。
+        /// TextBox1 控制項。
         /// </summary>
         /// <remarks>
         /// 自動產生的欄位。
         /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListBox ListBox1;
+        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+
+        /// <summary>
+        /// Button1 控制項。
+        /// </summary>
+        /// <remarks>
+        /// 自動產生的欄位。
+        /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button1;
     }
 }

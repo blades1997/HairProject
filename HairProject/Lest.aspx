@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Lest.aspx.cs" Inherits="WebApplication2.WebForm6" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Lest.aspx.cs" Inherits="HairProject.Lest" %>
 
 <!DOCTYPE html>
 
@@ -9,20 +9,22 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
+        <div id="txtCusList">
         </div>
         <div style="margin-left: 80px">
             <asp:Label ID="Label1" runat="server" Text="顧客名單管理"></asp:Label>
             <br />
             <br />
+            <br />
+            <asp:TextBox ID="TextBox1" runat="server" Height="136px" Width="676px"></asp:TextBox>
+&nbsp;&nbsp;&nbsp;
+            <asp:Button ID="Button1" runat="server" Text="新增顧客" OnClick="Button1_Click" />
         </div>
         <p>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
         </p>
-        <div style="margin-left: 40px">
-            <asp:ListBox ID="ListBox1" runat="server" Height="364px" Width="319px"></asp:ListBox>
+        
         </div>
     </form>
 </body>
 </html>
-
