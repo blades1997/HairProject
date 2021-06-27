@@ -15,12 +15,12 @@
 <body>
     <form id="form1" runat="server">
         <div class="auto-style1">
-            <asp:Image ID="Image1" runat="server" Height="150px" Width="150px" style="text-align: center" />
-&nbsp;<asp:Image ID="Image2" runat="server" Height="150px" Width="150px" />
-&nbsp;<asp:Image ID="Image3" runat="server" Height="150px" Width="150px" />
-&nbsp;<asp:Image ID="Image4" runat="server" Height="150px" Width="150px" />
-&nbsp;<asp:Image ID="Image5" runat="server" Height="150px" Width="150px" />
-&nbsp;<asp:Image ID="Image6" runat="server" Height="150px" Width="150px" />
+            <asp:Image ID="Image1" runat="server" Height="150px" Width="150px" style="text-align: center" ImageUrl="~/images/hairproduct/images_1.jpg" />
+&nbsp;<asp:Image ID="Image2" runat="server" Height="150px" Width="150px" ImageUrl="~/images/hairproduct/images_2.jpg" />
+&nbsp;<asp:Image ID="Image3" runat="server" Height="150px" Width="150px" ImageUrl="~/images/hairproduct/images_3.jpg" />
+&nbsp;<asp:Image ID="Image4" runat="server" Height="150px" Width="150px" ImageUrl="~/images/hairproduct/images_4.jpg" />
+&nbsp;<asp:Image ID="Image5" runat="server" Height="150px" Width="150px" ImageUrl="~/images/hairproduct/images_5.jpg" />
+&nbsp;<asp:Image ID="Image6" runat="server" Height="150px" Width="150px" ImageUrl="~/images/hairproduct/images_6.jpg" />
             <br />
             <br />
             <br />
@@ -28,12 +28,12 @@
             <br />
             <br />
             ===================================================================================================================<br />
-            <asp:Image ID="Image7" runat="server" Height="150px" Width="150px" />
-&nbsp;<asp:Image ID="Image8" runat="server" Height="150px" Width="150px" />
-&nbsp;<asp:Image ID="Image9" runat="server" Height="150px" Width="150px" />
-&nbsp;<asp:Image ID="Image10" runat="server" Height="150px" Width="150px" />
-&nbsp;<asp:Image ID="Image11" runat="server" Height="150px" Width="150px" />
-&nbsp;<asp:Image ID="Image12" runat="server" Height="150px" Width="150px" />
+            <asp:Image ID="Image7" runat="server" Height="150px" Width="150px" ImageUrl="~/images/hairproduct/images_7.jpg" />
+&nbsp;<asp:Image ID="Image8" runat="server" Height="150px" Width="150px" ImageUrl="~/images/hairproduct/images_8.jpg" />
+&nbsp;<asp:Image ID="Image9" runat="server" Height="150px" Width="150px" ImageUrl="~/images/hairproduct/images_9.jpg" />
+&nbsp;<asp:Image ID="Image10" runat="server" Height="150px" Width="150px" ImageUrl="~/images/hairproduct/images_10.jpg" />
+&nbsp;<asp:Image ID="Image11" runat="server" Height="150px" Width="150px" ImageUrl="~/images/hairproduct/images_11.jpg" />
+&nbsp;<asp:Image ID="Image12" runat="server" Height="150px" Width="150px" ImageUrl="~/images/hairproduct/images_12.jpg" />
             <br />
             <br />
             <br />
@@ -41,13 +41,7 @@
             <br />
             <br />
             ===================================================================================================================<br />
-            <asp:Image ID="Image13" runat="server" Height="150px" Width="150px" />
-&nbsp;<asp:Image ID="Image14" runat="server" Height="150px" Width="150px" />
-&nbsp;<asp:Image ID="Image15" runat="server" Height="150px" Width="150px" />
-&nbsp;<asp:Image ID="Image16" runat="server" Height="150px" Width="150px" />
-&nbsp;<asp:Image ID="Image17" runat="server" Height="150px" Width="150px" />
-&nbsp;<asp:Image ID="Image18" runat="server" Height="150px" Width="150px" />
-            <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
             <br />
             <br />
             <br />
