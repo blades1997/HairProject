@@ -23,7 +23,7 @@
 						<li><a href="#two">設計師</a></li>
 						<li><a href="#work">相關產品</a></li>
 						<li><a href="#contact">我要預約</a></li>
-					    <asp:Button ID="btnlogin" runat="server" OnClick="btnlogin_Click" Text="登入" />
+					    <asp:Button ID="btnlogin" runat="server" OnClick="btnlogin_Click" Text="登入" Height="50px" />
                         <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
                         <asp:Button ID="btnlogout" runat="server" Text="立即登出" OnClick="btnlogout_Click" />
 					</ul>
@@ -33,7 +33,7 @@
 
 		<!-- Intro -->
 			<section id="intro" class="main style1 dark fullscreen">
-				<div class="content">
+				<div class="content box style2">
 					<header>
 						<h2>Hey.</h2>
 					</header>
