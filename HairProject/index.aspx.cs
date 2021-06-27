@@ -21,7 +21,7 @@ namespace HairProject
 
                 btnlogin.Visible = false;
 
-                Label1.Text = Session["name"].ToString() + $"您好";
+                Label1.Text = Session["name"].ToString() + "您好";
             }
         }
 

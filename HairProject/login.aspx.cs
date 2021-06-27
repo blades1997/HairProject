@@ -14,7 +14,7 @@ namespace HairProject
         {
             if (Session["logined"] != null && Session["logined"].ToString() == "1")
             {
-                Server.Transfer("index");
+                Response.Redirect("index");
             }
         }
 
@@ -59,6 +59,10 @@ namespace HairProject
                             Label1.Text = "密碼錯誤!";
                         }
                     }
+                    else
+                    {
+                        Label1.Text = "沙小";
+                    }    
                 }
                 else
                 {

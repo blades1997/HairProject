@@ -14,7 +14,7 @@
 <form action="#" method="post" runat="server">
   <h2>註冊帳號</h2>	
 		<p>
-			<label for="account" class="floatLabel">帳號</label>
+			<label for="account" class="floatLabel">名稱</label>
             <asp:TextBox ID="Txtaccount" runat="server"></asp:TextBox>
             <asp:Label ID="lblaccount" runat="server"></asp:Label>
 		</p>
@@ -31,6 +31,7 @@
 		<p>
 			<asp:Button ID="Submit" runat="server" Text="建立帳號" OnClick="Submit_Click" />
             <asp:TextBox ID="TextBox1" runat="server" Enabled="False" ReadOnly="True"></asp:TextBox>
+            <asp:Button ID="return" runat="server" Text="返回" OnClick="return_Click" />
 		</p>
 	</form>
 <!-- partial -->

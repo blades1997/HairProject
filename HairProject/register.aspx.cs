@@ -16,6 +16,7 @@ namespace HairProject
             lblaccount.Text = ("");
             lblconfirm_password.Text = ("");
             TextBox1.Text = ("");
+            
         }
 
         protected void Submit_Click(object sender, EventArgs e)
@@ -64,6 +65,10 @@ namespace HairProject
                         command.ExecuteNonQuery();
 
                         connection.Close();
+
+                        TextBox1.Text = ("帳號創建成功! ");
+
+                        
                     }
                     else
                     {
@@ -75,6 +80,11 @@ namespace HairProject
             {
                 TextBox1.Text = ("請確認輸入資料是否完整");
             }
+        }
+
+        protected void return_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("index");
         }
     }
 }
