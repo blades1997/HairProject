@@ -21,7 +21,7 @@
     <h3>Username:</h3>
       <asp:TextBox ID="Txtaccount" runat="server"></asp:TextBox>
     <h3>Password:</h3>
-      <asp:TextBox ID="Txtpassword" runat="server"></asp:TextBox>
+      <asp:TextBox ID="Txtpassword" runat="server" TextMode="Password"></asp:TextBox>
     <br>
       <asp:Label ID="Label1" runat="server" Font-Italic="True" Font-Underline="False" Height="30px" Width="300px"></asp:Label>
       <br>

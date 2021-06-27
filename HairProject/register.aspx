@@ -20,12 +20,12 @@
 		</p>
 		<p>
 			<label for="password" class="floatLabel">密碼</label>
-            <asp:TextBox ID="Txtpassword" runat="server"></asp:TextBox>	
+            <asp:TextBox ID="Txtpassword" runat="server" TextMode="Password"></asp:TextBox>	
             <asp:Label ID="lblpassword" runat="server"></asp:Label>
 		</p>
 		<p>
 			<label for="confirm_password" class="floatLabel">確認密碼</label>
-            <asp:TextBox ID="confirm_password" runat="server"></asp:TextBox>
+            <asp:TextBox ID="confirm_password" runat="server" TextMode="Password"></asp:TextBox>
             <asp:Label ID="lblconfirm_password" runat="server"></asp:Label>
 		</p>
 		<p>
