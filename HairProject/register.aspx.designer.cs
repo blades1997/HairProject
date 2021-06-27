@@ -15,13 +15,13 @@ namespace HairProject
     {
 
         /// <summary>
-        /// txtaccount 控制項。
+        /// Txtaccount 控制項。
         /// </summary>
         /// <remarks>
         /// 自動產生的欄位。
         /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtaccount;
+        protected global::System.Web.UI.WebControls.TextBox Txtaccount;
 
         /// <summary>
         /// lblaccount 控制項。
@@ -33,13 +33,13 @@ namespace HairProject
         protected global::System.Web.UI.WebControls.Label lblaccount;
 
         /// <summary>
-        /// password 控制項。
+        /// Txtpassword 控制項。
         /// </summary>
         /// <remarks>
         /// 自動產生的欄位。
         /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox password;
+        protected global::System.Web.UI.WebControls.TextBox Txtpassword;
 
         /// <summary>
         /// lblpassword 控制項。
@@ -69,12 +69,21 @@ namespace HairProject
         protected global::System.Web.UI.WebControls.Label lblconfirm_password;
 
         /// <summary>
-        /// submit 控制項。
+        /// Submit 控制項。
         /// </summary>
         /// <remarks>
         /// 自動產生的欄位。
         /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button submit;
+        protected global::System.Web.UI.WebControls.Button Submit;
+
+        /// <summary>
+        /// TextBox1 控制項。
+        /// </summary>
+        /// <remarks>
+        /// 自動產生的欄位。
+        /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBox1;
     }
 }
