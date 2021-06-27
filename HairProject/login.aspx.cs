@@ -53,12 +53,12 @@ namespace HairProject
                                 Session["name"] = Request.Form["Txtaccount"];
 
                                 Response.Redirect("index");
-
-
+                              
                             }
                             else
                             {
                                 Label1.Text = "密碼錯誤!";
+
                             }
                         }
                     }
@@ -103,6 +103,8 @@ namespace HairProject
                                 Session["name"] = Request.Form["Txtaccount"];
 
                                 Response.Redirect("personalhomepage");
+
+                                connection.Close();
 
 
                             }
