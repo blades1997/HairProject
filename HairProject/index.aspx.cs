@@ -11,12 +11,25 @@ namespace HairProject
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["logined"] == null)
+            {
+                btnlogin.Enabled = true;
+            }
+            else
+            {
+                btnlogin.Enabled = false;
 
+                btnlogin.Visible = false;
+
+                Label1.Text = Session["name"].ToString() + $"您好";
+            }
         }
 
         protected void btnlogin_Click(object sender, EventArgs e)
         {
-            Response.Redirect("login");
+           
+                Response.Redirect("login");
+           
         }
 
         protected void btnhair_Click(object sender, EventArgs e)

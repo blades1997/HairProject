@@ -24,6 +24,7 @@
 						<li><a href="#work">相關產品</a></li>
 						<li><a href="#contact">我要預約</a></li>
 					    <asp:Button ID="btnlogin" runat="server" OnClick="btnlogin_Click" Text="登入" />
+                        <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
 					</ul>
 				</nav>
 			    <br />

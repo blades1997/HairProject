@@ -45,8 +45,14 @@ namespace HairProject
 
                         if (reader["password"].ToString().Trim() == Request.Form["Txtpassword"])
                         {
-                          
+
+                            Session["logined"] = 1 ;
+
+                            Session["name"] = Request.Form["Txtaccount"]; 
+
                             Response.Redirect("index");
+
+
                         }
                         else
                         {
