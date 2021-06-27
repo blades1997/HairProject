@@ -25,6 +25,7 @@
 						<li><a href="#contact">我要預約</a></li>
 					    <asp:Button ID="btnlogin" runat="server" OnClick="btnlogin_Click" Text="登入" />
                         <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
+                        <asp:Button ID="btnlogout" runat="server" Text="立即登出" OnClick="btnlogout_Click" />
 					</ul>
 				</nav>
 			    <br />
@@ -113,7 +114,7 @@
 				
 							</div>
 							<ul class="actions special">
-								<li><input type="submit" value="我要預約" /></li>
+								<li> <asp:Button ID="Button1" runat="server" Text="我要預約" OnClick="Button1_Click" /></li>
                                    
 							</ul>
 					</div>

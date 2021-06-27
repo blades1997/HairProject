@@ -14,12 +14,22 @@ namespace HairProject
             if (Session["logined"] == null)
             {
                 btnlogin.Enabled = true;
+
+                btnlogin.Visible = true;
+
+                btnlogout.Enabled = false;
+
+                btnlogout.Visible = false;
             }
             else
             {
                 btnlogin.Enabled = false;
 
                 btnlogin.Visible = false;
+
+                btnlogout.Visible = true;
+
+                btnlogout.Enabled = true;
 
                 Label1.Text = Session["name"].ToString() + "您好";
             }
@@ -45,6 +55,22 @@ namespace HairProject
         protected void btnproduct_Click(object sender, EventArgs e)
         {
             Response.Redirect("productinfo");
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("User_Reservation");
+        }
+
+        protected void btnlogout_Click(object sender, EventArgs e)
+        {
+            Session.RemoveAll();
+
+            btnlogin.Visible = true;
+            btnlogin.Enabled = true;
+            btnlogout.Visible = false;
+            btnlogout.Enabled = false;
+            Label1.Text = "";
         }
     }
 }

@@ -29,12 +29,16 @@
 &nbsp;<asp:Button ID="BtnReg" runat="server" Height="30px" OnClick="BtnReg_Click" Text="註冊" Width="104px" />
       <asp:Button ID="BtnForget" runat="server" Text="忘記密碼?" Width="73px" OnClick="BtnForget_Click" />
     <br>
+      <asp:RadioButtonList ID="RadioButtonList1" runat="server">
+          <asp:ListItem Selected="True" Value="rdbcustomer">顧客</asp:ListItem>
+          <asp:ListItem Value="rdbdesigner">設計師</asp:ListItem>
+      </asp:RadioButtonList>
     &nbsp;<br>
     
   </div>
 </div>
 <div class="error-page">
-  <div class="try-again">Error: Try again?</div>
+  <div class="try-again">Error: Try again?n">Error: Try again?</div>
 </div>
 <!-- partial -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
