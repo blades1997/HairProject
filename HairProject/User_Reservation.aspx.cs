@@ -22,5 +22,10 @@ namespace HairProject
             Label3.Text += Calendar1.SelectedDate.Date.Month.ToString() + "月";
             Label3.Text += Calendar1.SelectedDate.Date.Day.ToString() + "日";
         }
+
+        protected void CheckBoxList1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

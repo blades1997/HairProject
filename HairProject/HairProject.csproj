@@ -134,6 +134,20 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="designerlist.aspx" />
+    <Content Include="hairinfo.aspx" />
+    <Content Include="images\hairproduct\images_1.jpg" />
+    <Content Include="images\hairproduct\images_10.jpg" />
+    <Content Include="images\hairproduct\images_11.jpg" />
+    <Content Include="images\hairproduct\images_12.jpg" />
+    <Content Include="images\hairproduct\images_2.jpg" />
+    <Content Include="images\hairproduct\images_3.jpg" />
+    <Content Include="images\hairproduct\images_4.jpg" />
+    <Content Include="images\hairproduct\images_5.jpg" />
+    <Content Include="images\hairproduct\images_6.jpg" />
+    <Content Include="images\hairproduct\images_7.jpg" />
+    <Content Include="images\hairproduct\images_8.jpg" />
+    <Content Include="images\hairproduct\images_9.jpg" />
     <Content Include="index.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -184,6 +198,7 @@
     <Content Include="assets\webfonts\fa-solid-900.woff" />
     <Content Include="assets\webfonts\fa-solid-900.woff2" />
     <Content Include="Lest.aspx" />
+    <Content Include="productinfo.aspx" />
     <Content Include="register.aspx" />
     <Content Include="Reservation.aspx" />
     <Content Include="script.js" />
@@ -285,6 +300,20 @@
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
+    <Compile Include="designerlist.aspx.cs">
+      <DependentUpon>designerlist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="designerlist.aspx.designer.cs">
+      <DependentUpon>designerlist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="hairinfo.aspx.cs">
+      <DependentUpon>hairinfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="hairinfo.aspx.designer.cs">
+      <DependentUpon>hairinfo.aspx</DependentUpon>
+    </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -322,6 +351,13 @@
     </Compile>
     <Compile Include="personalhomepage.aspx.designer.cs">
       <DependentUpon>personalhomepage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="productinfo.aspx.cs">
+      <DependentUpon>productinfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="productinfo.aspx.designer.cs">
+      <DependentUpon>productinfo.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="register.aspx.cs">

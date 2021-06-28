@@ -14,22 +14,24 @@
 <form action="#" method="post" runat="server">
   <h2>註冊帳號</h2>	
 		<p>
-			<label for="account" class="floatLabel">帳號</label>
-            <asp:TextBox ID="txtaccount" runat="server"></asp:TextBox>
+			<label for="account" class="floatLabel">名稱</label>
+            <asp:TextBox ID="Txtaccount" runat="server"></asp:TextBox>
             <asp:Label ID="lblaccount" runat="server"></asp:Label>
 		</p>
 		<p>
 			<label for="password" class="floatLabel">密碼</label>
-            <asp:TextBox ID="password" runat="server"></asp:TextBox>	
+            <asp:TextBox ID="Txtpassword" runat="server" TextMode="Password"></asp:TextBox>	
             <asp:Label ID="lblpassword" runat="server"></asp:Label>
 		</p>
 		<p>
 			<label for="confirm_password" class="floatLabel">確認密碼</label>
-            <asp:TextBox ID="confirm_password" runat="server"></asp:TextBox>
+            <asp:TextBox ID="confirm_password" runat="server" TextMode="Password"></asp:TextBox>
             <asp:Label ID="lblconfirm_password" runat="server"></asp:Label>
 		</p>
 		<p>
-			<asp:Button ID="submit" runat="server" Text="建立帳號" />
+			<asp:Button ID="Submit" runat="server" Text="建立帳號" OnClick="Submit_Click" />
+            <asp:TextBox ID="TextBox1" runat="server" Enabled="False" ReadOnly="True"></asp:TextBox>
+            <asp:Button ID="return" runat="server" Text="返回" OnClick="return_Click" />
 		</p>
 	</form>
 <!-- partial -->

@@ -651,37 +651,37 @@ input, select, textarea {
 
 /* Button */
 
-	input[type="button"],
-	input[type="submit"],
-	input[type="reset"],
-	.button,
-	button {
-		border-style: none;
-    border-color: inherit;
-    border-width: 0;
-    -moz-appearance: none;
-		-webkit-appearance: none;
-		-ms-appearance: none;
-		appearance: none;
-		-moz-transition: background-color 0.2s ease-in-out;
-		-webkit-transition: background-color 0.2s ease-in-out;
-		-ms-transition: background-color 0.2s ease-in-out;
-		transition: background-color 0.2s ease-in-out;
-		background-color: #98c593;
-		border-radius: 3.5em;
-		color: #ffffff;
-		cursor: pointer;
-		display: inline-block;
-		height: 2.6em;
-		line-height: 3.5em;
-		outline: 0;
-		padding: 0 2em 0 2em;
-		position: relative;
-		text-align: center;
-		text-decoration: none;
-    top: 14px;
-    left: 12px;
-    width: 175px;
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+.button,
+button {
+	border-style: none;
+	border-color: inherit;
+	border-width: 0;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+	-moz-transition: background-color 0.2s ease-in-out;
+	-webkit-transition: background-color 0.2s ease-in-out;
+	-ms-transition: background-color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out;
+	background-color: #98c593;
+	border-radius: 3.5em;
+	color: #ffffff;
+	cursor: pointer;
+	display: inline-block;
+	height: 2em;
+	outline: 0;
+	padding: 0 2em 0 2em;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	top: 28px;
+	left: 12px;
+	width: 239px;
+	height: 50px;
 }
 
 		input[type="button"].down,

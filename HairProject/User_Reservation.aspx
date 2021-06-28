@@ -34,7 +34,7 @@
         </asp:Calendar>
         <br />
         <h2><asp:Label ID="Label4" runat="server" Text="選擇服務項目"></asp:Label></h2>
-        <asp:CheckBoxList ID="CheckBoxList1" runat="server" Font-Size="16pt" Height="37px" RepeatDirection="Horizontal" Width="370px">
+        <asp:CheckBoxList ID="CheckBoxList1" runat="server" Font-Size="16pt" Height="37px" RepeatDirection="Horizontal" Width="370px" OnSelectedIndexChanged="CheckBoxList1_SelectedIndexChanged">
             <asp:ListItem>洗髮</asp:ListItem>
             <asp:ListItem>剪髮</asp:ListItem>
             <asp:ListItem>燙髮</asp:ListItem>
