@@ -161,6 +161,12 @@
     <Content Include="images\hairproduct\images_7.jpg" />
     <Content Include="images\hairproduct\images_8.jpg" />
     <Content Include="images\hairproduct\images_9.jpg" />
+    <Content Include="images\thumbs\images_1.jpg" />
+    <Content Include="images\thumbs\images_2.jpg" />
+    <Content Include="images\thumbs\images_3.jpg" />
+    <Content Include="images\thumbs\images_4.jpg" />
+    <Content Include="images\thumbs\images_5.jpg" />
+    <Content Include="images\thumbs\images_6.jpg" />
     <Content Include="index.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />

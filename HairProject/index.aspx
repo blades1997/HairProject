@@ -80,22 +80,22 @@
 					<!-- Gallery  -->
 						<div class="gallery">
 							<article class="from-left">
-								<a href="images/fulls/01.jpg" class="image fit"><img src="images/thumbs/01.jpg" title="The Anonymous Red" alt="" /></a>
+								<a href="images/fulls/01.jpg" class="image fit"><img src="images/thumbs/images_1.jpg" title="The Anonymous Red" alt="" /></a>
 							</article>
 							<article class="from-right">
-								<a href="images/fulls/02.jpg" class="image fit"><img src="images/thumbs/02.jpg" title="Airchitecture II" alt="" /></a>
+								<a href="images/fulls/02.jpg" class="image fit"><img src="images/thumbs/images_2.jpg" title="Airchitecture II" alt="" /></a>
 							</article>
 							<article class="from-left">
-								<a href="images/fulls/03.jpg" class="image fit"><img src="images/thumbs/03.jpg" title="Air Lounge" alt="" /></a>
+								<a href="images/fulls/03.jpg" class="image fit"><img src="images/thumbs/images_3.jpg" title="Air Lounge" alt="" /></a>
 							</article>
 							<article class="from-right">
-								<a href="images/fulls/04.jpg" class="image fit"><img src="images/thumbs/04.jpg" title="Carry on" alt="" /></a>
+								<a href="images/fulls/04.jpg" class="image fit"><img src="images/thumbs/images_4.jpg" title="Carry on" alt="" /></a>
 							</article>
 							<article class="from-left">
-								<a href="images/fulls/05.jpg" class="image fit"><img src="images/thumbs/05.jpg" title="The sparkling shell" alt="" /></a>
+								<a href="images/fulls/05.jpg" class="image fit"><img src="images/thumbs/images_5.jpg" title="The sparkling shell" alt="" /></a>
 							</article>
 							<article class="from-right">
-								<a href="images/fulls/06.jpg" class="image fit"><img src="images/thumbs/06.jpg" title="Bent IX" alt="" /></a>
+								<a href="images/fulls/06.jpg" class="image fit"><img src="images/thumbs/images_6.jpg" title="Bent IX" alt="" /></a>
 							</article>
 						</div>
 

@@ -27,7 +27,7 @@
       <br>
       <asp:Button ID="BtnLogin" runat="server" Height="30px" OnClick="BtnLogin_Click" Text="登入" Width="104px" />
 &nbsp;<asp:Button ID="BtnReg" runat="server" Height="30px" OnClick="BtnReg_Click" Text="註冊" Width="104px" />
-      <asp:Button ID="BtnForget" runat="server" Text="忘記密碼?" Width="73px" OnClick="BtnForget_Click" />
+      <asp:Button ID="BtnForget" runat="server" Text="忘記密碼?" Width="73px" OnClick="BtnForget_Click" /><asp:Button ID="Button1" runat="server" Text="返回" Height="20px" OnClick="Button1_Click" Width="73px" />
     <br>
       <asp:RadioButtonList ID="RadioButtonList1" runat="server">
           <asp:ListItem Selected="True" Value="rdbcustomer">顧客</asp:ListItem>

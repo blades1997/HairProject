@@ -135,6 +135,11 @@ namespace HairProject
     protected void BtnForget_Click(object sender, EventArgs e)
         {
             Label1.Text = ("請洽詢客服人員0988-777-666 或 來信 email : hair123123@gmail.com");
-        }    
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("index");
+        }
     }
 }
