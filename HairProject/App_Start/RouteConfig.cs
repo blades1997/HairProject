@@ -13,6 +13,7 @@ namespace HairProject
             var settings = new FriendlyUrlSettings();
             settings.AutoRedirectMode = RedirectMode.Permanent;
             routes.EnableFriendlyUrls(settings);
+            routes.MapPageRoute("default", "", "~/index.aspx");
         }
     }
 }
