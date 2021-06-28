@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -25,6 +27,36 @@ namespace HairProject
 
         protected void CheckBoxList1_SelectedIndexChanged(object sender, EventArgs e)
         {
+
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("index");
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            string getconfig = System.Web.Configuration.WebConfigurationManager.ConnectionStrings["HairProject_dbConnectionString"].ConnectionString;
+
+            SqlConnection Connection = new SqlConnection(getconfig);
+
+            Connection.Open();
+
+            SqlCommand command = new SqlCommand($"INSERT INTO [Reservation](designer,datatime,project) VALUES(@designer, @datatime, @project)", Connection);
+
+            command.Parameters.Add("@designer", SqlDbType.NVarChar);
+            command.Parameters["@designer"].Value = DropDownList1.SelectedItem.Text + Label5.Text;
+
+            command.Parameters.Add("@datatime", SqlDbType.NVarChar);
+            command.Parameters["@datatime"].Value = Label3.Text;
+
+            command.Parameters.Add("@project", SqlDbType.NVarChar);
+            command.Parameters["@project"].Value = CheckBoxList1.SelectedItem.Text;
+
+            command.ExecuteNonQuery();
+
+            Connection.Close();
 
         }
     }

@@ -16,7 +16,8 @@
         <p>
             <asp:DropDownList ID="DropDownList1" runat="server">
             </asp:DropDownList>
-            號設計師</p>
+            <asp:Label ID="Label5" runat="server" Text="號設計師"></asp:Label>
+        </p>
         <br />
         <h2><asp:Label ID="Label2" runat="server" Text="選擇日期"></asp:Label></h2>
         <p>
@@ -41,7 +42,8 @@
             <asp:ListItem>染髮</asp:ListItem>
         </asp:CheckBoxList>
         <br />
-        <asp:Button ID="Button1" runat="server" Height="42px" Text="送出" Width="110px" />
+        <asp:Button ID="Button1" runat="server" Height="42px" Text="送出" Width="110px" OnClick="Button1_Click" />
+        <asp:Button ID="Button2" runat="server" Height="42px" Text="取消" Width="110px" OnClick="Button2_Click" />
         <br />
     </form>
 </body>
