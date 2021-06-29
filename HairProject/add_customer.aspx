@@ -41,9 +41,11 @@
             </asp:DropDownList>
             <br />
             <br />
-            <asp:RadioButton ID="rdbM" runat="server" Text="男" />
 &nbsp;&nbsp;&nbsp;
-            <asp:RadioButton ID="rdbF" runat="server" Text="女" />
+            <asp:RadioButtonList ID="RadioButtonList1" runat="server" RepeatDirection="Horizontal">
+                <asp:ListItem Selected="True">男</asp:ListItem>
+                <asp:ListItem>女</asp:ListItem>
+            </asp:RadioButtonList>
             <br />
             <br />
             <br />

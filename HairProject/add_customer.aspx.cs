@@ -28,7 +28,7 @@ namespace HairProject
         {
             DropDownTypes.Text = "燙髮";
             DropDownJob.Text = "金融";
-            rdbM.Checked = true;
+            
             
         }
 
@@ -40,30 +40,23 @@ namespace HairProject
 
             Connection.Open();
 
-            SqlCommand command = new SqlCommand($"INSERT INTO [Custemer](Name,Tel,Type,Job,Sex) VALUES(@Name, @Tel, @Type, @Job, @Sex)", Connection);
+            SqlCommand command = new SqlCommand($"INSERT INTO [CustemerInfo](name,tel,type,job,sex) VALUES(@name, @tel, @type, @job, @sex)", Connection);
 
-            command.Parameters.Add("@Name", SqlDbType.NVarChar);
-            command.Parameters["@Name"].Value = TextName.Text;
+            command.Parameters.Add("@name", SqlDbType.NVarChar);
+            command.Parameters["@name"].Value = TextName.Text;
 
-            command.Parameters.Add("@Tel", SqlDbType.NVarChar);
-            command.Parameters["@Tel"].Value = TextTel.Text;
+            command.Parameters.Add("@tel", SqlDbType.NVarChar);
+            command.Parameters["@tel"].Value = TextTel.Text;
 
-            command.Parameters.Add("@Type", SqlDbType.NVarChar);
-            command.Parameters["@Type"].Value = DropDownTypes.SelectedItem.Text;
+            command.Parameters.Add("@type", SqlDbType.NVarChar);
+            command.Parameters["@type"].Value = DropDownTypes.SelectedItem.Text;
 
-            command.Parameters.Add("@Job", SqlDbType.NVarChar);
-            command.Parameters["@Job"].Value = DropDownJob.SelectedItem.Text;
+            command.Parameters.Add("@job", SqlDbType.NVarChar);
+            command.Parameters["@job"].Value = DropDownJob.SelectedItem.Text;
 
-            if (rdbM.Checked)
-            {
-                command.Parameters.Add("@Sex", SqlDbType.NVarChar);
-                command.Parameters["@Sex"].Value = rdbM.Text;
-            }
-            if (rdbF.Checked)
-            {
-                command.Parameters.Add("@Sex", SqlDbType.NVarChar);
-                command.Parameters["@Sex"].Value = rdbF.Text;
-            }
+            command.Parameters.Add("@sex", SqlDbType.NVarChar);
+            command.Parameters["@sex"].Value = RadioButtonList1.SelectedItem.Text;
+
 
             command.ExecuteNonQuery();
 
@@ -71,14 +64,7 @@ namespace HairProject
 
 
             string sex = "";
-            if (rdbM.Checked)
-            {
-                sex = "先生";
-            }
-            else
-            {
-                sex = "小姐";
-            }
+            
             cus.Add(new Customer()
             {
                 CusName = TextName.Text,
