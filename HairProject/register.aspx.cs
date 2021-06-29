@@ -86,5 +86,10 @@ namespace HairProject
         {
             Response.Redirect("index");
         }
+
+        protected void Txtpassword_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
