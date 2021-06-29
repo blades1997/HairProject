@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>新增/修改個人首頁</title>
 </head>
-<body>
+<body background="https://images.pexels.com/photos/3297593/pexels-photo-3297593.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
     <td class="left"> 上傳頭貼<span style="color: red; font-weight: bolder">*</span>：</td>
   <td>
     <form id="form1" runat="server">
