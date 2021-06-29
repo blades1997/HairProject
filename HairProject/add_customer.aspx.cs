@@ -94,9 +94,6 @@ namespace HairProject
 
         }
 
-        protected System.Void BtnAdd_Click(System.Object sender, System.EventArgs e)
-        {
-
-        }
+        
     }
 }
