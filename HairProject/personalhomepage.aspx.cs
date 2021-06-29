@@ -24,11 +24,6 @@ namespace HairProject
             Response.Redirect("Performance");
         }
 
-        protected void Button3_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("Workpublished");
-        }
-
         protected void Button4_Click(object sender, EventArgs e)
         {
             Response.Redirect("Lest");
