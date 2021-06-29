@@ -37,27 +37,35 @@ namespace HairProject
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            string getconfig = System.Web.Configuration.WebConfigurationManager.ConnectionStrings["HairProject_dbConnectionString"].ConnectionString;
+            if (Label3.Text == "")
+            {
+                Label6.Text = "請選擇日期";
+            }
+            else
+            {
+                string getconfig = System.Web.Configuration.WebConfigurationManager.ConnectionStrings["HairProject_dbConnectionString"].ConnectionString;
 
-            SqlConnection Connection = new SqlConnection(getconfig);
+                SqlConnection Connection = new SqlConnection(getconfig);
 
-            Connection.Open();
+                Connection.Open();
 
-            SqlCommand command = new SqlCommand($"INSERT INTO [Reservation](designer,datatime,project) VALUES(@designer, @datatime, @project)", Connection);
+                SqlCommand command = new SqlCommand($"INSERT INTO [Reservation](designer,datatime,project) VALUES(@designer, @datatime, @project)", Connection);
 
-            command.Parameters.Add("@designer", SqlDbType.NVarChar);
-            command.Parameters["@designer"].Value = DropDownList1.SelectedItem.Text + Label5.Text;
+                command.Parameters.Add("@designer", SqlDbType.NVarChar);
+                command.Parameters["@designer"].Value = DropDownList1.SelectedItem.Text + Label5.Text;
 
-            command.Parameters.Add("@datatime", SqlDbType.NVarChar);
-            command.Parameters["@datatime"].Value = Label3.Text;
+                command.Parameters.Add("@datatime", SqlDbType.NVarChar);
+                command.Parameters["@datatime"].Value = Label3.Text;
 
-            command.Parameters.Add("@project", SqlDbType.NVarChar);
-            command.Parameters["@project"].Value = CheckBoxList1.SelectedItem.Text;
+                command.Parameters.Add("@project", SqlDbType.NVarChar);
+                command.Parameters["@project"].Value = CheckBoxList1.SelectedItem.Text;
 
-            command.ExecuteNonQuery();
+                command.ExecuteNonQuery();
 
-            Connection.Close();
+                Connection.Close();
 
+                Label6.Text = "預約完成";
+            }
         }
     }
 }
