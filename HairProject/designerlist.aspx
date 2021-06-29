@@ -14,6 +14,8 @@
         <asp:Image ID="Image1" runat="server" Height="150px" Width="150px" />
         &nbsp;
      
+        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="回首頁" />
+     
         <br />
         <br />
 &nbsp;

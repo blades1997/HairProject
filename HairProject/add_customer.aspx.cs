@@ -34,35 +34,13 @@ namespace HairProject
 
         protected void BtnAdd_Click(object sender, EventArgs e)
         {
-            
-            string sex = "";
-            if (rdbM.Checked)
-            {
-                sex = "先生";
-            }
-            else
-            {
-                sex = "小姐";
-            }
-            cus.Add(new Customer()
-            {
-                CusName = TextName.Text,
-                CusTel = TextTel.Text,
-                CusTypes = DropDownTypes.Text,
-                CusJob = DropDownJob.Text,
-                CusSex = sex
-            });
-            
-            TextName.Text = "";
-            TextTel.Text = "";
-
             string getconfig = System.Web.Configuration.WebConfigurationManager.ConnectionStrings["HairProject_dbConnectionString"].ConnectionString;
 
             SqlConnection Connection = new SqlConnection(getconfig);
 
             Connection.Open();
 
-            SqlCommand command = new SqlCommand($"INSERT INTO [Haircustomer](Name,Tel,Type,Job,Sex) VALUES(@Name, @Tel, @Type, @Job,@Sex)", Connection);
+            SqlCommand command = new SqlCommand($"INSERT INTO [Custemer](Name,Tel,Type,Job,Sex) VALUES(@Name, @Tel, @Type, @Job, @Sex)", Connection);
 
             command.Parameters.Add("@Name", SqlDbType.NVarChar);
             command.Parameters["@Name"].Value = TextName.Text;
@@ -81,7 +59,7 @@ namespace HairProject
                 command.Parameters.Add("@Sex", SqlDbType.NVarChar);
                 command.Parameters["@Sex"].Value = rdbM.Text;
             }
-            else
+            if (rdbF.Checked)
             {
                 command.Parameters.Add("@Sex", SqlDbType.NVarChar);
                 command.Parameters["@Sex"].Value = rdbF.Text;
@@ -90,6 +68,30 @@ namespace HairProject
             command.ExecuteNonQuery();
 
             Connection.Close();
+
+
+            string sex = "";
+            if (rdbM.Checked)
+            {
+                sex = "先生";
+            }
+            else
+            {
+                sex = "小姐";
+            }
+            cus.Add(new Customer()
+            {
+                CusName = TextName.Text,
+                CusTel = TextTel.Text,
+                CusTypes = DropDownTypes.Text,
+                CusJob = DropDownJob.Text,
+                CusSex = sex
+            });
+            
+            //TextName.Text = "";
+            //TextTel.Text = "";
+
+
         }
 
        
