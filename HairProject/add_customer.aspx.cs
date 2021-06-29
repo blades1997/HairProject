@@ -34,7 +34,7 @@ namespace HairProject
 
         protected void BtnAdd_Click(object sender, EventArgs e)
         {
-            string getconfig = System.Web.Configuration.WebConfigurationManager.ConnectionStrings["HairProject_dbConnectionString"].ConnectionString;
+            string getconfig = System.Web.Configuration.WebConfigurationManager.ConnectionStrings["hairConnectionString"].ConnectionString;
 
             SqlConnection Connection = new SqlConnection(getconfig);
 
@@ -80,6 +80,6 @@ namespace HairProject
 
         }
 
-       
+        
     }
 }

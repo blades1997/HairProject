@@ -43,7 +43,7 @@ namespace HairProject
             }
             else
             {
-                string getconfig = System.Web.Configuration.WebConfigurationManager.ConnectionStrings["HairProject_dbConnectionString"].ConnectionString;
+                string getconfig = System.Web.Configuration.WebConfigurationManager.ConnectionStrings["hairConnectionString"].ConnectionString;
 
                 SqlConnection Connection = new SqlConnection(getconfig);
 

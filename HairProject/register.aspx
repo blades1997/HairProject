@@ -14,7 +14,7 @@
 <form action="#" method="post" runat="server">
   <h2>註冊帳號</h2>	
 		<p>
-			<label for="account" class="floatLabel">名稱</label>
+			<label for="account" class="floatLabel">帳號</label>
             <asp:TextBox ID="Txtaccount" runat="server"></asp:TextBox>
             <asp:Label ID="lblaccount" runat="server"></asp:Label>
 		</p>
@@ -27,6 +27,14 @@
 			<label for="confirm_password" class="floatLabel">確認密碼</label>
             <asp:TextBox ID="confirm_password" runat="server" TextMode="Password"></asp:TextBox>
             <asp:Label ID="lblconfirm_password" runat="server"></asp:Label>
+		</p>
+	     <p>
+			 <label for="name" class="floatLabel">姓名</label>
+			  <asp:TextBox ID="Txtname" runat="server"></asp:TextBox>
+	     </p>
+	     <p>
+			 <label for="email" class="floatLabel">電子信箱</label>
+			 <asp:TextBox ID="Txtemail" runat="server"></asp:TextBox>
 		</p>
 		<p>
 			<asp:Button ID="Submit" runat="server" Text="建立帳號" OnClick="Submit_Click" />
