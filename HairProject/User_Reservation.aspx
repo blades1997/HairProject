@@ -37,13 +37,16 @@
         <h2><asp:Label ID="Label4" runat="server" Text="選擇服務項目"></asp:Label></h2>
         <asp:CheckBoxList ID="CheckBoxList1" runat="server" Font-Size="16pt" Height="37px" RepeatDirection="Horizontal" Width="370px" OnSelectedIndexChanged="CheckBoxList1_SelectedIndexChanged">
             <asp:ListItem>洗髮</asp:ListItem>
-            <asp:ListItem>剪髮</asp:ListItem>
+            <asp:ListItem Selected="True">剪髮</asp:ListItem>
             <asp:ListItem>燙髮</asp:ListItem>
             <asp:ListItem>染髮</asp:ListItem>
         </asp:CheckBoxList>
         <br />
         <asp:Button ID="Button1" runat="server" Height="42px" Text="送出" Width="110px" OnClick="Button1_Click" />
-        <asp:Button ID="Button2" runat="server" Height="42px" Text="取消" Width="110px" OnClick="Button2_Click" />
+        <asp:Button ID="Button2" runat="server" Height="42px" Text="返回" Width="110px" OnClick="Button2_Click" />
+        <br />
+        <br />
+        <asp:Label ID="Label6" runat="server"></asp:Label>
         <br />
     </form>
 </body>

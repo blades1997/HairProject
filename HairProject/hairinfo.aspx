@@ -7,21 +7,14 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
 </head>
-<body>
+<body background="https://images.pexels.com/photos/3297593/pexels-photo-3297593.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
     <form id="form1" runat="server">
-        <div aria-expanded="true" aria-multiline="True">
-            <asp:Image ID="Image1" runat="server" Height="200px" Width="200px" />
-&nbsp;<asp:Image ID="Image2" runat="server" Height="200px" Width="200px" />
-&nbsp;<asp:Image ID="Image3" runat="server" Height="200px" Width="200px" />
-&nbsp;<asp:Image ID="Image4" runat="server" Height="200px" Width="200px" />
-&nbsp;<asp:Image ID="Image10" runat="server" Height="200px" Width="200px" />
-&nbsp;<asp:Image ID="Image9" runat="server" Height="200px" Width="200px" />
-&nbsp;<asp:Image ID="Image5" runat="server" Height="200px" Width="200px" />
-&nbsp;<asp:Image ID="Image6" runat="server" Height="200px" Width="200px" />
-&nbsp;<asp:Image ID="Image7" runat="server" Height="200px" Width="200px" />
-&nbsp;<asp:Image ID="Image8" runat="server" Height="200px" Width="200px" />
-   &nbsp;<asp:Image ID="Image11" runat="server" Height="200px" Width="200px" />
-      &nbsp;<asp:Image ID="Image12" runat="server" Height="200px" Width="200px" />
+        <div aria-expanded="true" aria-multiline="True" style="width: 719px">
+            <asp:Image ID="Image1" runat="server" Height="265px" Width="250px" ImageUrl="~/images/296231.jpg" />
+&nbsp;<asp:Image ID="Image2" runat="server" Height="265px" Width="250px" ImageUrl="~/images/296233.jpg" />
+&nbsp;&nbsp;<asp:Image ID="Image4" runat="server" Height="265px" Width="250px" ImageUrl="~/images/296235.jpg" />
+      &nbsp;<asp:Image ID="Image3" runat="server" Height="265px" Width="250px" ImageUrl="~/images/296234.jpg" />
+            <asp:Button ID="Button1" runat="server" Height="31px" OnClick="Button1_Click" style="margin-top: 0px" Text="返回主頁" Width="136px" />
         </div>
     </form>
 </body>

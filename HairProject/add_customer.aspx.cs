@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -32,7 +34,42 @@ namespace HairProject
 
         protected void BtnAdd_Click(object sender, EventArgs e)
         {
-            
+            string getconfig = System.Web.Configuration.WebConfigurationManager.ConnectionStrings["HairProject_dbConnectionString"].ConnectionString;
+
+            SqlConnection Connection = new SqlConnection(getconfig);
+
+            Connection.Open();
+
+            SqlCommand command = new SqlCommand($"INSERT INTO [Custemer](Name,Tel,Type,Job,Sex) VALUES(@Name, @Tel, @Type, @Job, @Sex)", Connection);
+
+            command.Parameters.Add("@Name", SqlDbType.NVarChar);
+            command.Parameters["@Name"].Value = TextName.Text;
+
+            command.Parameters.Add("@Tel", SqlDbType.NVarChar);
+            command.Parameters["@Tel"].Value = TextTel.Text;
+
+            command.Parameters.Add("@Type", SqlDbType.NVarChar);
+            command.Parameters["@Type"].Value = DropDownTypes.SelectedItem.Text;
+
+            command.Parameters.Add("@Job", SqlDbType.NVarChar);
+            command.Parameters["@Job"].Value = DropDownJob.SelectedItem.Text;
+
+            if (rdbM.Checked)
+            {
+                command.Parameters.Add("@Sex", SqlDbType.NVarChar);
+                command.Parameters["@Sex"].Value = rdbM.Text;
+            }
+            if (rdbF.Checked)
+            {
+                command.Parameters.Add("@Sex", SqlDbType.NVarChar);
+                command.Parameters["@Sex"].Value = rdbF.Text;
+            }
+
+            command.ExecuteNonQuery();
+
+            Connection.Close();
+
+
             string sex = "";
             if (rdbM.Checked)
             {
@@ -51,9 +88,9 @@ namespace HairProject
                 CusSex = sex
             });
             
-            TextName.Text = "";
-            TextTel.Text = "";
-             
+            //TextName.Text = "";
+            //TextTel.Text = "";
+
 
         }
 

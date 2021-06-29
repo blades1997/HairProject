@@ -149,6 +149,10 @@
     <Content Include="Content\Site.css" />
     <Content Include="designerlist.aspx" />
     <Content Include="hairinfo.aspx" />
+    <Content Include="images\296231.jpg" />
+    <Content Include="images\296233.jpg" />
+    <Content Include="images\296234.jpg" />
+    <Content Include="images\296235.jpg" />
     <Content Include="images\hairproduct\images_1.jpg" />
     <Content Include="images\hairproduct\images_10.jpg" />
     <Content Include="images\hairproduct\images_11.jpg" />
@@ -226,7 +230,6 @@
     <Content Include="style1.css" />
     <Content Include="Upload.aspx" />
     <Content Include="User_Reservation.aspx" />
-    <Content Include="Workpublished.aspx" />
     <None Include="Properties\PublishProfiles\HairProject20210628094825 - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="images\fulls\01.jpg" />
@@ -427,13 +430,6 @@
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="Workpublished.aspx.cs">
-      <DependentUpon>Workpublished.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Workpublished.aspx.designer.cs">
-      <DependentUpon>Workpublished.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

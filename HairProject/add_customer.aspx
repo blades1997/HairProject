@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
 </head>
-<body>
+<body background="https://images.pexels.com/photos/3297593/pexels-photo-3297593.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
     <form id="form1" runat="server">
         <div>
         </div>
@@ -17,7 +17,7 @@
         <p style="margin-left: 40px">
            </p>
         <div style="margin-left: 40px">
-            <asp:Label ID="Label1" runat="server" Text="顧客姓名："></asp:Label> &nbsp;<asp:TextBox ID="TextName" runat="server" OnTextChanged="TextName_TextChanged"></asp:TextBox>
+            <asp:Label ID="Label1" runat="server" Text="顧客姓名："></asp:Label> &nbsp;<asp:TextBox ID="TextName" runat="server"></asp:TextBox>
             &nbsp;&nbsp;&nbsp;
             <br />
             <asp:Label ID="Label2" runat="server" Text="聯絡電話："></asp:Label> &nbsp;<asp:TextBox ID="TextTel" runat="server"></asp:TextBox>
