@@ -1,10 +1,3 @@
 {
-  "dependencies": {
-    "mssql1": {
-      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/hairprojectdbserver/databases/HairProject_db",
-      "type": "mssql.azure",
-      "connectionId": "hairConnectionString",
-      "secretStore": "AzureAppSettings"
-    }
-  }
+  "dependencies": {}
 }

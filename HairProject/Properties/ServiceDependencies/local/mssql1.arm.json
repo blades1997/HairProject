@@ -4,7 +4,7 @@
   "parameters": {
     "resourceGroupName": {
       "type": "string",
-      "defaultValue": "HairProject20210618233706ResourceGroup",
+      "defaultValue": "Hairproject",
       "metadata": {
         "_parameterType": "resourceGroup",
         "description": "資源的資源群組名稱。建議您將資源放在相同的資源群組下，以改進追蹤。"
@@ -12,7 +12,7 @@
     },
     "resourceGroupLocation": {
       "type": "string",
-      "defaultValue": "southcentralus",
+      "defaultValue": "westus2",
       "metadata": {
         "_parameterType": "location",
         "description": "資源群組的位置。資源群組的位置可能與資源不同。"
@@ -36,7 +36,7 @@
     },
     {
       "type": "Microsoft.Resources/deployments",
-      "name": "[concat(parameters('resourceGroupName'), 'Deployment', uniqueString(concat('HairProject_db', subscription().subscriptionId)))]",
+      "name": "[concat(parameters('resourceGroupName'), 'Deployment', uniqueString(concat('HairProject', subscription().subscriptionId)))]",
       "resourceGroup": "[parameters('resourceGroupName')]",
       "apiVersion": "2019-10-01",
       "dependsOn": [
@@ -51,7 +51,7 @@
             {
               "kind": "v12.0",
               "location": "[parameters('resourceLocation')]",
-              "name": "hairprojectdbserver",
+              "name": "hairproject",
               "type": "Microsoft.Sql/servers",
               "apiVersion": "2017-10-01-preview"
             },
@@ -63,11 +63,11 @@
               },
               "kind": "v12.0,user",
               "location": "[parameters('resourceLocation')]",
-              "name": "hairprojectdbserver/HairProject_db",
+              "name": "hairproject/HairProject",
               "type": "Microsoft.Sql/servers/databases",
               "apiVersion": "2017-10-01-preview",
               "dependsOn": [
-                "hairprojectdbserver"
+                "hairproject"
               ]
             }
           ]

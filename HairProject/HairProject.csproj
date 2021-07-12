@@ -148,6 +148,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="designerlist.aspx" />
+    <Content Include="forgotpassword.aspx" />
     <Content Include="hairinfo.aspx" />
     <Content Include="images\296231.jpg" />
     <Content Include="images\296233.jpg" />
@@ -231,6 +232,7 @@
     <Content Include="Upload.aspx" />
     <Content Include="User_Reservation.aspx" />
     <None Include="Properties\PublishProfiles\HairProject20210628094825 - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\HairProject20210721155149 - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="images\fulls\01.jpg" />
     <Content Include="images\fulls\02.jpg" />
@@ -328,6 +330,13 @@
     </Compile>
     <Compile Include="designerlist.aspx.designer.cs">
       <DependentUpon>designerlist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="forgotpassword.aspx.cs">
+      <DependentUpon>forgotpassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="forgotpassword.aspx.designer.cs">
+      <DependentUpon>forgotpassword.aspx</DependentUpon>
     </Compile>
     <Compile Include="hairinfo.aspx.cs">
       <DependentUpon>hairinfo.aspx</DependentUpon>

@@ -1,10 +1,13 @@
 {
   "dependencies": {
+    "secrets1": {
+      "type": "secrets.user"
+    },
     "mssql1": {
-      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/hairprojectdbserver/databases/HairProject_db",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/hairproject/databases/HairProject",
       "type": "mssql.azure",
-      "connectionId": "hairConnectionString",
-      "secretStore": null
+      "connectionId": "HairprojectConnectionStrings",
+      "secretStore": "LocalSecretsFile"
     }
   }
 }

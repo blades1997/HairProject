@@ -28,7 +28,7 @@ namespace HairProject
             {
                 if (Request.Form["Txtaccount"] != null && Request.Form["Txtpassword"] != null)
                 {
-                    string s_data = System.Web.Configuration.WebConfigurationManager.ConnectionStrings["hairConnectionString"].ConnectionString;
+                    string s_data = System.Web.Configuration.WebConfigurationManager.ConnectionStrings["HairProjectConnectionString"].ConnectionString;
 
                     SqlConnection connection = new SqlConnection(s_data);
 
@@ -50,7 +50,7 @@ namespace HairProject
 
                                 Session["logined"] = 1;
 
-                                Session["name"] = Request.Form["Txtaccount"];
+                                Session["name"] = Request.Form["Txtname"];
 
                                 Response.Redirect("index");
                               
@@ -134,7 +134,7 @@ namespace HairProject
 
     protected void BtnForget_Click(object sender, EventArgs e)
         {
-            Label1.Text = ("請洽詢客服人員0988-777-666 或 來信 email : hair123123@gmail.com");
+            Response.Redirect("forgotpassword");
         }
 
         protected void Button1_Click(object sender, EventArgs e)

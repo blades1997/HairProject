@@ -23,7 +23,7 @@ namespace HairProject
         {
             if(Request.Form["Txtaccount"]!= "" && Request.Form["Txtpassword"] != "" && Request.Form["confirm_password"] != "" && Request.Form["Txtemail"] != "" && Request.Form["Txtname"] != "")
             {
-                string sqldata = System.Web.Configuration.WebConfigurationManager.ConnectionStrings["hairConnectionString"].ConnectionString;
+                string sqldata = System.Web.Configuration.WebConfigurationManager.ConnectionStrings["HairProjectConnectionString"].ConnectionString;
 
                 SqlConnection Connection = new SqlConnection(sqldata);
 
@@ -47,7 +47,7 @@ namespace HairProject
 
                     if (Request.Form["confirm_password"] == Request.Form["Txtpassword"])
                     {
-                        string s_data = System.Web.Configuration.WebConfigurationManager.ConnectionStrings["hairConnectionString"].ConnectionString;
+                        string s_data = System.Web.Configuration.WebConfigurationManager.ConnectionStrings["HairProjectConnectionString"].ConnectionString;
 
                         SqlConnection connection = new SqlConnection(s_data);
 
