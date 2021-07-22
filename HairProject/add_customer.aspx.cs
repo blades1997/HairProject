@@ -40,7 +40,7 @@ namespace HairProject
 
             Connection.Open();
 
-            SqlCommand command = new SqlCommand($"INSERT INTO [CustomerInfo](name,tel,type,job,sex) VALUES(@name, @tel, @type, @job, @sex)", Connection);
+            SqlCommand command = new SqlCommand($"INSERT INTO [Customerinfo](name,tel,type,job,sex) VALUES(@name, @tel, @type, @job, @sex)", Connection);
 
             command.Parameters.Add("@name", SqlDbType.NVarChar);
             command.Parameters["@name"].Value = TextName.Text;
