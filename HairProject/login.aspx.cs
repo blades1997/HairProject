@@ -78,7 +78,7 @@ namespace HairProject
             {
                 if (Request.Form["Txtaccount"] != null && Request.Form["Txtpassword"] != null)
                 {
-                    string s_data = System.Web.Configuration.WebConfigurationManager.ConnectionStrings["hairConnectionString"].ConnectionString;
+                    string s_data = System.Web.Configuration.WebConfigurationManager.ConnectionStrings["HairProjectConnectionString"].ConnectionString;
 
                     SqlConnection connection = new SqlConnection(s_data);
 
@@ -97,7 +97,7 @@ namespace HairProject
 
                             if (reader["password"].ToString().Trim() == Request.Form["Txtpassword"])
                             {
-
+                              
                                 Session["logined"] = 2;
 
                                 Session["name"] = Request.Form["Txtaccount"];
@@ -106,6 +106,17 @@ namespace HairProject
 
                                 connection.Close();
 
+                                if (Request.Form["Txtaccount"] == "designer01")
+
+                                    Session["image"] = 1;
+
+                                else if (Request.Form["Txtaccount"] == "designer02")
+
+                                    Session["image"] = 2;
+
+                                else
+
+                                    Session["image"] = 3;
 
                             }
                             else
