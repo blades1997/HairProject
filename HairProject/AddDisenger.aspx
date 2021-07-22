@@ -22,22 +22,32 @@
         </div>
         </div>
         </span>
-        <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+        <asp:TextBox ID="TextName" runat="server"></asp:TextBox>
         <br />
         <br />
         <asp:Label ID="Label2" runat="server" Text="請輸入您的專長："></asp:Label>
         <br />
         <br />
-        <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+        <asp:TextBox ID="TextSkills" runat="server"></asp:TextBox>
         <br />
         <br />
         <asp:Label ID="Label3" runat="server" Text="個性簽名："></asp:Label>
         <br />
         <br />
-        <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+        <asp:TextBox ID="TextSignature" runat="server"></asp:TextBox>
+        <br />
         <p>
             &nbsp;</p>
-        <asp:Button ID="Button1" runat="server" Text="送出" />
+        <p>
+            &nbsp;</p>
+        <p>
+            即時訊息</p>
+        <p>
+            <asp:TextBox ID="TextLine" runat="server" Height="70px" Width="388px"></asp:TextBox>
+        </p>
+        <p>
+            &nbsp;</p>
+        <asp:Button ID="Button1" runat="server" Text="送出" OnClick="Button1_Click" />
          </form>
 </body>
 </html>
