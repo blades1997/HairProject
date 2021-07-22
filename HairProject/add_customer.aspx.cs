@@ -34,13 +34,13 @@ namespace HairProject
 
         protected void BtnAdd_Click(object sender, EventArgs e)
         {
-            string getconfig = System.Web.Configuration.WebConfigurationManager.ConnectionStrings["hairConnectionString"].ConnectionString;
+            string getconfig = System.Web.Configuration.WebConfigurationManager.ConnectionStrings["HairProjectConnectionString"].ConnectionString;
 
             SqlConnection Connection = new SqlConnection(getconfig);
 
             Connection.Open();
 
-            SqlCommand command = new SqlCommand($"INSERT INTO [CustemerInfo](name,tel,type,job,sex) VALUES(@name, @tel, @type, @job, @sex)", Connection);
+            SqlCommand command = new SqlCommand($"INSERT INTO [CustomerInfo](name,tel,type,job,sex) VALUES(@name, @tel, @type, @job, @sex)", Connection);
 
             command.Parameters.Add("@name", SqlDbType.NVarChar);
             command.Parameters["@name"].Value = TextName.Text;
