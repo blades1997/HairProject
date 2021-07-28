@@ -30,8 +30,7 @@ namespace HairProject
                 btnlogout.Visible = true;
 
                 btnlogout.Enabled = true;
-
-                Label1.Text = Session["name"].ToString() + "您好";
+              
             }
         }
 
