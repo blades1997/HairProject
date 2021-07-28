@@ -64,6 +64,8 @@ namespace HairProject
 
 
             string sex = "";
+
+            Label5.Text = "新增成功!";
             
             cus.Add(new Customer()
             {

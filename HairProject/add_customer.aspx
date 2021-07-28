@@ -52,6 +52,7 @@
             <br />
             <br />
             <asp:Button ID="BtnAdd" runat="server" OnClick="BtnAdd_Click" Text="新增" />
+            <asp:Label ID="Label5" runat="server" Text="Label"></asp:Label>
             <br />
             <asp:Table ID="TxtShow" runat="server" Height="185px" Width="542px">
             </asp:Table>
