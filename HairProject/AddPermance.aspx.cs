@@ -19,6 +19,7 @@ namespace HairProject
 
         protected void Button1_Click(object sender, EventArgs e)
         {
+            
             string s_data = System.Web.Configuration.WebConfigurationManager.ConnectionStrings["HairProjectConnectionString"].ConnectionString;
 
             SqlConnection Connection = new SqlConnection(s_data);
@@ -64,30 +65,36 @@ namespace HairProject
             command.Parameters.Add("@sell", SqlDbType.NVarChar);
             command.Parameters["@sell"].Value = TextSell.Text;
 
-            int Prem = int.Parse(TextPrem.Text);
-            int Color = int.Parse(TextColor.Text);
-            int Cat = int.Parse(TextCat.Text);
-            int Shoomp = int.Parse(TextShoomp.Text);
-            int Sell = int.Parse(TextSell.Text);
-            command.Parameters.Add("@sum", SqlDbType.NVarChar);
-            command.Parameters["@sum"].Value = $"{Prem + Color + Cat + Shoomp + Sell}";
+            try
+            {
+                int Prem = int.Parse(TextPrem.Text);
+                int Color = int.Parse(TextColor.Text);
+                int Cat = int.Parse(TextCat.Text);
+                int Shoomp = int.Parse(TextShoomp.Text);
+                int Sell = int.Parse(TextSell.Text);
+                command.Parameters.Add("@sum", SqlDbType.NVarChar);
+                command.Parameters["@sum"].Value = $"{Prem + Color + Cat + Shoomp + Sell}";
 
-            int Prempo = int.Parse(TextPremPeo.Text);
-            int Colorpo = int.Parse(TextColorPeo.Text);
-            int Catpo = int.Parse(TextCatPeo.Text);
-            int Shoomppo = int.Parse(TextShoompPeo.Text);
-            command.Parameters.Add("@sumpo", SqlDbType.NVarChar);
-            command.Parameters["@sumpo"].Value = $"{Prempo + Colorpo + Catpo + Shoomppo }";
-
-
-
-            command.ExecuteNonQuery();
-
-            Connection.Close();
-
-            Response.Redirect("Performance");
+                int Prempo = int.Parse(TextPremPeo.Text);
+                int Colorpo = int.Parse(TextColorPeo.Text);
+                int Catpo = int.Parse(TextCatPeo.Text);
+                int Shoomppo = int.Parse(TextShoompPeo.Text);
+                command.Parameters.Add("@sumpo", SqlDbType.NVarChar);
+                command.Parameters["@sumpo"].Value = $"{Prempo + Colorpo + Catpo + Shoomppo }";
 
 
+
+                command.ExecuteNonQuery();
+
+                Connection.Close();
+
+                Response.Redirect("Performance");
+
+            }
+            catch
+            {
+                TextBox10.Text = "請勿輸入空值! 請重新輸入一次!";
+            }
 
 
 

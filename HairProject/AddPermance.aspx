@@ -72,44 +72,44 @@
             <br />
             燙髮業績&nbsp;&nbsp;&nbsp; 
            
-            <asp:TextBox ID="TextPrem" runat="server"></asp:TextBox>
+            <asp:TextBox ID="TextPrem" runat="server">0</asp:TextBox>
             &nbsp;&nbsp;&nbsp;
            
             <asp:Label ID="Label3" runat="server" Text="客數"></asp:Label>
             &nbsp;&nbsp;&nbsp;&nbsp;
            
-            <asp:TextBox ID="TextPremPeo" runat="server" Width="41px"></asp:TextBox>
+            <asp:TextBox ID="TextPremPeo" runat="server" Width="41px">0</asp:TextBox>
             <br />
             <br />
             染髮業績&nbsp;&nbsp;&nbsp; 
            
-            <asp:TextBox ID="TextColor" runat="server"></asp:TextBox>
+            <asp:TextBox ID="TextColor" runat="server">0</asp:TextBox>
             &nbsp;&nbsp;&nbsp;
            
             <asp:Label ID="Label4" runat="server" Text="客數"></asp:Label>
             &nbsp;&nbsp;&nbsp;&nbsp;
            
-            <asp:TextBox ID="TextColorPeo" runat="server" Width="41px"></asp:TextBox>
+            <asp:TextBox ID="TextColorPeo" runat="server" Width="41px">0</asp:TextBox>
             <br />
             <br />
             <asp:Label ID="Label1" runat="server" Text="剪髮業績"></asp:Label>
             &nbsp;&nbsp;&nbsp;
            
-            <asp:TextBox ID="TextCat" runat="server"></asp:TextBox>
+            <asp:TextBox ID="TextCat" runat="server">0</asp:TextBox>
             &nbsp;&nbsp;&nbsp;
            
             <asp:Label ID="Label6" runat="server" Text="客數"></asp:Label>
             &nbsp;&nbsp;&nbsp;&nbsp;
            
-            <asp:TextBox ID="TextCatPeo" runat="server" Width="41px"></asp:TextBox>
+            <asp:TextBox ID="TextCatPeo" runat="server" Width="41px">0</asp:TextBox>
             <br />
             <br />
             洗髮業績&nbsp;&nbsp;&nbsp; 
            
-            <asp:TextBox ID="TextShoomp" runat="server" Height="19px"></asp:TextBox>
+            <asp:TextBox ID="TextShoomp" runat="server" Height="19px">0</asp:TextBox>
             &nbsp;&nbsp;&nbsp; 客數&nbsp;&nbsp;&nbsp;&nbsp; 
            
-            <asp:TextBox ID="TextShoompPeo" runat="server" Width="41px"></asp:TextBox>
+            <asp:TextBox ID="TextShoompPeo" runat="server" Width="41px">0</asp:TextBox>
             <br />
             <br />
             <asp:Label ID="Label2" runat="server" Text="業績總額"></asp:Label>
@@ -124,14 +124,14 @@
             <asp:Label ID="Label7" runat="server" Text="產品銷售"></asp:Label>
             &nbsp;&nbsp;&nbsp;
            
-            <asp:TextBox ID="TextSell" runat="server"></asp:TextBox>
+            <asp:TextBox ID="TextSell" runat="server">0</asp:TextBox>
             <br />
             <br />
             <br />
             <asp:Label ID="Label8" runat="server" Text="銷售品項"></asp:Label>
             &nbsp;&nbsp;&nbsp;
            
-            <asp:TextBox ID="TextBox10" runat="server" Height="132px" Width="261px"></asp:TextBox>
+            <asp:TextBox ID="TextBox10" runat="server" Height="132px" Width="261px">0</asp:TextBox>
             <br />
             <br />
             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:HairProjectConnectionString %>" SelectCommand="SELECT [moom], [day], [disenger], [prem], [prempo], [color], [colorpo], [cat], [catpo], [shoomp], [sell], [shoomppo], [sum], [sumpo], [initDate] FROM [money]"></asp:SqlDataSource>
