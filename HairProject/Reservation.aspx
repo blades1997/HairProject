@@ -28,8 +28,14 @@
         <asp:Label ID="Label4" runat="server" Text="消費項目"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:Label ID="Label5" runat="server" Text="時間"></asp:Label>
-        <asp:GridView ID="GridView1" runat="server" CssClass="auto-style1" Height="162px" Width="500px">
+        <asp:GridView ID="GridView1" runat="server" CssClass="auto-style1" Height="162px" Width="500px" AutoGenerateColumns="False" DataSourceID="SqlDataSource1">
+            <Columns>
+                <asp:BoundField DataField="designer" HeaderText="designer" SortExpression="designer" />
+                <asp:BoundField DataField="datatime" HeaderText="datatime" SortExpression="datatime" />
+                <asp:BoundField DataField="project" HeaderText="project" SortExpression="project" />
+            </Columns>
         </asp:GridView>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:HairProjectConnectionString %>" SelectCommand="SELECT [designer], [datatime], [project] FROM [Reservation]"></asp:SqlDataSource>
     </form>
 </body>
 </html>
