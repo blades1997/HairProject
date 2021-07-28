@@ -15,7 +15,10 @@
     <form id="form1" runat="server">
         <div>
             <p style="margin-left: 50px; font-size: 20px;">
-                個性簽名</p>
+                <asp:Label ID="Label10" runat="server" Text="Label"></asp:Label>
+                個性簽名&nbsp; 
+                <asp:Label ID="LabelSignature" runat="server" Font-Names="Ink Free" ForeColor="#0099FF" Text="Label"></asp:Label>
+            </p>
             <p style="margin-left: 50px; font-size: 20px;">
                 &nbsp;</p>
         </div>
@@ -23,8 +26,10 @@
         <asp:Image ID="Image1" runat="server" Width="172px" CssClass="auto-style1" Height="153px" ImageUrl="~/images/cutter.jpg" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:Label ID="Label1" runat="server" Text="設計師:"></asp:Label>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Label ID="LabelName" runat="server" Font-Names="Ink Free" ForeColor="#0099FF" Text="Label"></asp:Label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:Label ID="Label2" runat="server" Text="專長："></asp:Label>
+        <asp:Label ID="LabelSkills" runat="server" Font-Names="Ink Free" ForeColor="#0099FF" Text="Label"></asp:Label>
         <br />
         <br />
         <br />
@@ -78,6 +83,3 @@
 </body>
 </html>
 
-    </form>
-</body>
-</html>

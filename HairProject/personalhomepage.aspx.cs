@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data.SqlClient;
 
 namespace HairProject
 {
@@ -11,7 +12,31 @@ namespace HairProject
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-          
+            string getconfig = System.Web.Configuration.WebConfigurationManager.ConnectionStrings["HairProjectConnectionString"].ConnectionString;
+
+            SqlConnection Connection = new SqlConnection(getconfig);
+
+            SqlCommand Command = new SqlCommand($"Select * from designerinfo", Connection);
+
+            Connection.Open();
+
+            SqlDataReader Reader = Command.ExecuteReader();
+
+            if (Reader.HasRows)
+            {
+                if (Reader.Read())
+                {
+                    LabelName.Text = Reader["name"].ToString();
+                    LabelSkills.Text = Reader["skills"].ToString();
+                    LabelSignature.Text = Reader["signature"].ToString();
+
+                }
+            }
+
+
+
+            Connection.Close();
+
         }
 
         protected void Button1_Click(object sender, EventArgs e)
