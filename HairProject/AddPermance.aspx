@@ -17,32 +17,34 @@
                 <asp:ListItem>MARY</asp:ListItem>
                 <asp:ListItem>智善</asp:ListItem>
             </asp:DropDownList>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:DropDownList ID="DropDownList2" runat="server">
-                <asp:ListItem>01</asp:ListItem>
-                <asp:ListItem>02</asp:ListItem>
-                <asp:ListItem>03</asp:ListItem>
-                <asp:ListItem>04</asp:ListItem>
-                <asp:ListItem>05</asp:ListItem>
-                <asp:ListItem>06</asp:ListItem>
-                <asp:ListItem>07</asp:ListItem>
-                <asp:ListItem>08</asp:ListItem>
-                <asp:ListItem>09</asp:ListItem>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;日期&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           
+            &nbsp;&nbsp;&nbsp;<asp:DropDownList ID="DropDownList2" runat="server">
+                <asp:ListItem>1</asp:ListItem>
+                <asp:ListItem>2</asp:ListItem>
+                <asp:ListItem>3</asp:ListItem>
+                <asp:ListItem>4</asp:ListItem>
+                <asp:ListItem>5</asp:ListItem>
+                <asp:ListItem>6</asp:ListItem>
+                <asp:ListItem>7</asp:ListItem>
+                <asp:ListItem>8</asp:ListItem>
+                <asp:ListItem>9</asp:ListItem>
                 <asp:ListItem>10</asp:ListItem>
                 <asp:ListItem>11</asp:ListItem>
                 <asp:ListItem>12</asp:ListItem>
             </asp:DropDownList>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; 月&nbsp;&nbsp;&nbsp; 
             <asp:DropDownList ID="DropDownList3" runat="server">
-                <asp:ListItem>01</asp:ListItem>
-                <asp:ListItem>02</asp:ListItem>
-                <asp:ListItem>03</asp:ListItem>
-                <asp:ListItem>04</asp:ListItem>
-                <asp:ListItem>05</asp:ListItem>
-                <asp:ListItem>06</asp:ListItem>
-                <asp:ListItem>07</asp:ListItem>
-                <asp:ListItem>08</asp:ListItem>
-                <asp:ListItem>09</asp:ListItem>
+                <asp:ListItem>1</asp:ListItem>
+                <asp:ListItem>2</asp:ListItem>
+                <asp:ListItem>3</asp:ListItem>
+                <asp:ListItem>4</asp:ListItem>
+                <asp:ListItem>5</asp:ListItem>
+                <asp:ListItem>6</asp:ListItem>
+                <asp:ListItem>7</asp:ListItem>
+                <asp:ListItem>8</asp:ListItem>
+                <asp:ListItem>9</asp:ListItem>
                 <asp:ListItem>10</asp:ListItem>
                 <asp:ListItem>11</asp:ListItem>
                 <asp:ListItem>12</asp:ListItem>
@@ -66,61 +68,79 @@
                 <asp:ListItem>30</asp:ListItem>
                 <asp:ListItem>31</asp:ListItem>
             </asp:DropDownList>
-            <br />
+&nbsp;&nbsp;&nbsp; 日<br />
             <br />
             燙髮業績&nbsp;&nbsp;&nbsp; 
+           
             <asp:TextBox ID="TextPrem" runat="server"></asp:TextBox>
-&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;
+           
             <asp:Label ID="Label3" runat="server" Text="客數"></asp:Label>
-&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;
+           
             <asp:TextBox ID="TextPremPeo" runat="server" Width="41px"></asp:TextBox>
             <br />
             <br />
             染髮業績&nbsp;&nbsp;&nbsp; 
+           
             <asp:TextBox ID="TextColor" runat="server"></asp:TextBox>
-&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;
+           
             <asp:Label ID="Label4" runat="server" Text="客數"></asp:Label>
-&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;
+           
             <asp:TextBox ID="TextColorPeo" runat="server" Width="41px"></asp:TextBox>
             <br />
             <br />
             <asp:Label ID="Label1" runat="server" Text="剪髮業績"></asp:Label>
-&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;
+           
             <asp:TextBox ID="TextCat" runat="server"></asp:TextBox>
-&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;
+           
             <asp:Label ID="Label6" runat="server" Text="客數"></asp:Label>
-&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;
+           
             <asp:TextBox ID="TextCatPeo" runat="server" Width="41px"></asp:TextBox>
             <br />
             <br />
             洗髮業績&nbsp;&nbsp;&nbsp; 
-            <asp:TextBox ID="TextShoomp" runat="server"></asp:TextBox>
-&nbsp;&nbsp;&nbsp; 客數&nbsp;&nbsp;&nbsp;&nbsp; 
+           
+            <asp:TextBox ID="TextShoomp" runat="server" Height="19px"></asp:TextBox>
+            &nbsp;&nbsp;&nbsp; 客數&nbsp;&nbsp;&nbsp;&nbsp; 
+           
             <asp:TextBox ID="TextShoompPeo" runat="server" Width="41px"></asp:TextBox>
             <br />
             <br />
             <asp:Label ID="Label2" runat="server" Text="業績總額"></asp:Label>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           
             <asp:Label ID="LabeSum" runat="server" Text="0"></asp:Label>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 總客數&nbsp;&nbsp;&nbsp;&nbsp; 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 總客數&nbsp;&nbsp;&nbsp;&nbsp; 
+           
             <asp:Label ID="LabelSumPeo" runat="server" Text="0"></asp:Label>
             <br />
             <br />
             <asp:Label ID="Label7" runat="server" Text="產品銷售"></asp:Label>
-&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;
+           
             <asp:TextBox ID="TextSell" runat="server"></asp:TextBox>
             <br />
             <br />
             <br />
             <asp:Label ID="Label8" runat="server" Text="銷售品項"></asp:Label>
-&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;
+           
             <asp:TextBox ID="TextBox10" runat="server" Height="132px" Width="261px"></asp:TextBox>
             <br />
             <br />
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:HairProjectConnectionString %>" SelectCommand="SELECT [moom], [day], [disenger], [prem], [prempo], [color], [colorpo], [cat], [catpo], [shoomp], [sell], [shoomppo], [sum], [sumpo], [initDate] FROM [money]"></asp:SqlDataSource>
             <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           
             <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="送出" />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           
             <br />
             <br />
             <br />

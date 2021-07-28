@@ -11,91 +11,79 @@ namespace HairProject
 {
     public partial class AddPermance : System.Web.UI.Page
     {
-        public class Permance
-        {
-            int PerPerm { get; set; }
-            int PerPermpeo { get; set; }
-            int PerColor { get; set; }
-            int PerColorpeo { get; set; }
-            int PerCat { get; set; }
-            int PerCatpeo { get; set; }
-            int Pershoomp { get; set; }
-            int Pershoomppeo { get; set; }
-        }
 
-        string[] day = new string[] { "燙髮", "客數", "染髮", "客數", "剪髮", "客數", "洗髮", "客數", "總業績", "總客數" };
-        
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            int prem = int.Parse(TextPrem.Text);
-            int color = int.Parse(TextColor.Text);
-            int cat = int.Parse(TextCat.Text);
-            int shoomp = int.Parse(TextShoomp.Text);
-            int sell = int.Parse(TextSell.Text);
-            int prempeo = int.Parse(TextPremPeo.Text);
-            int colorpeo = int.Parse(TextColorPeo.Text);
-            int catpeo = int.Parse(TextCatPeo.Text);
-            int shoomppeo = int.Parse(TextShoompPeo.Text);
+            string s_data = System.Web.Configuration.WebConfigurationManager.ConnectionStrings["HairProjectConnectionString"].ConnectionString;
+
+            SqlConnection Connection = new SqlConnection(s_data);
 
 
-            LabeSum.Text = ($"{prem + color + cat + shoomp + sell }");
-            LabelSumPeo.Text = ($"{prempeo + colorpeo + catpeo + shoomppeo}");
+            Connection.Open();
 
-            string s_data = System.Web.Configuration.WebConfigurationManager.ConnectionStrings["hairConnectionString"].ConnectionString;
+            SqlCommand command = new SqlCommand($"INSERT INTO [money](moom,day,disenger,prem,prempo,color,colorpo,cat,catpo,shoomp,shoomppo,sell,sum,sumpo,target) VALUES(@moom, @day, @disenger, @prem, @prempo,@color, @colorpo, @cat, @catpo, @shoomp, @shoomppo, @sell, @sum, @sumpo, @target)", Connection);
 
-            SqlConnection connection = new SqlConnection(s_data);
+            command.Parameters.Add("@moom", SqlDbType.NVarChar);
+            command.Parameters["@moom"].Value = DropDownList2.SelectedItem.Text;
 
-            string Pre = "select * from outstanding achievement where account='";
+            command.Parameters.Add("@day", SqlDbType.NVarChar);
+            command.Parameters["@day"].Value = DropDownList3.SelectedItem.Text;
 
-            SqlCommand command = new SqlCommand(Pre, connection);
+            command.Parameters.Add("@disenger", SqlDbType.NVarChar);
+            command.Parameters["@disenger"].Value = DropDownList1.SelectedItem.Text;
 
-            string sql = $"insert into [outstanding achievement](prem,prem_p,color,color_p,cat,cat_p,shoomp,shoomp_p,sum,sum_p) values(@prem,@prem_p,@color,@color_p,@cat,@cat_p,@shoomp,@shoomp_p,@sum,@sum_p)";
-
-            connection.Open();
-
-            
-            
-            
-
-            
             command.Parameters.Add("@prem", SqlDbType.NVarChar);
-            command.Parameters["@prem"].Value = Request.Form["TextPrem"];
+            command.Parameters["@prem"].Value = TextPrem.Text;
 
-            command.Parameters.Add("@prem_p", SqlDbType.NVarChar);
-            command.Parameters["@prem_p"].Value = Request.Form["TextPremPeo"];
+            command.Parameters.Add("@prempo", SqlDbType.NVarChar);
+            command.Parameters["@prempo"].Value = TextPremPeo.Text;
 
             command.Parameters.Add("@color", SqlDbType.NVarChar);
-            command.Parameters["@prem"].Value = Request.Form["Textcolor"];
+            command.Parameters["@color"].Value = TextColor.Text;
 
-            command.Parameters.Add("@color_p", SqlDbType.NVarChar);
-            command.Parameters["@prem_p"].Value = Request.Form["TextColorPeo"];
+            command.Parameters.Add("@colorpo", SqlDbType.NVarChar);
+            command.Parameters["@colorpo"].Value = TextColorPeo.Text;
 
             command.Parameters.Add("@cat", SqlDbType.NVarChar);
-            command.Parameters["@prem"].Value = Request.Form["Textcat"];
+            command.Parameters["@cat"].Value = TextCat.Text;
 
-            command.Parameters.Add("@cat_p", SqlDbType.NVarChar);
-            command.Parameters["@prem_p"].Value = Request.Form["TextCatPeo"];
+            command.Parameters.Add("@catpo", SqlDbType.NVarChar);
+            command.Parameters["@catpo"].Value = TextCatPeo.Text;
 
             command.Parameters.Add("@shoomp", SqlDbType.NVarChar);
-            command.Parameters["@prem"].Value = Request.Form["Textshoop"];
+            command.Parameters["@shoomp"].Value = TextShoomp.Text;
 
-            command.Parameters.Add("@shoomp_p", SqlDbType.NVarChar);
-            command.Parameters["@prem_p"].Value = Request.Form["TextShoompPeo"];
+            command.Parameters.Add("@shoomppo", SqlDbType.NVarChar);
+            command.Parameters["@shoomppo"].Value = TextShoompPeo.Text;
 
-            command.Parameters.Add("@color", SqlDbType.NVarChar);
-            command.Parameters["@prem"].Value = Request.Form[ "$ {TextPrem}+{Textcolor}+{Textcat}"+"{TextShoomp}"];
+            command.Parameters.Add("@sell", SqlDbType.NVarChar);
+            command.Parameters["@sell"].Value = TextSell.Text;
 
+            int Prem = int.Parse(TextPrem.Text);
+            int Color = int.Parse(TextColor.Text);
+            int Cat = int.Parse(TextCat.Text);
+            int Shoomp = int.Parse(TextShoomp.Text);
+            int Sell = int.Parse(TextSell.Text);
             command.Parameters.Add("@sum", SqlDbType.NVarChar);
-            command.Parameters["@sum_p"].Value = Request.Form["$ {TextPremPeo}+{TextcolorPeo}+{TextcatPeo}" + "{TextShoompPeo}"];
+            command.Parameters["@sum"].Value = $"{Prem + Color + Cat + Shoomp + Sell}";
+
+            int Prempo = int.Parse(TextPremPeo.Text);
+            int Colorpo = int.Parse(TextColorPeo.Text);
+            int Catpo = int.Parse(TextCatPeo.Text);
+            int Shoomppo = int.Parse(TextShoompPeo.Text);
+            command.Parameters.Add("@sumpo", SqlDbType.NVarChar);
+            command.Parameters["@sumpo"].Value = $"{Prempo + Colorpo + Catpo + Shoomppo }";
+
+
 
             command.ExecuteNonQuery();
 
-            connection.Close();
+            Connection.Close();
 
             Response.Redirect("Performance");
 
@@ -103,8 +91,14 @@ namespace HairProject
 
 
 
+
+
+
         }
 
-       
+        protected void timeBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
